@@ -1,0 +1,70 @@
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Themes */
+/* -------------------------------------------------------------------------- */
+.theme {
+    border-top: 30px solid #999;
+    margin: 0.5em 0 0;
+    padding: 0;
+}
+
+.theme h2 {
+    color: #22313d;
+    background-color: #f4f1ed;
+    margin:0;
+    padding: 0.3em 0;
+}
+.theme h2:before {
+    content: ":: ";
+    color: #ff6710;
+}
+
+.theme header {
+    margin-bottom: 2em;
+}
+.theme header p,
+.theme header h3 {
+    font-style: italic;
+    margin:0;
+}
+
+.navTheme {
+    margin: 0;
+}
+/* -------------------------------------------------------------------------- */
+/* Criteria */
+/* -------------------------------------------------------------------------- */
+.criteria {
+    border-top: solid 2px #00005b;
+}
+
+.criteria h3 {
+    margin-top: 0.5em;
+}
+
+.correspondance {
+    color: black;
+    background-color: #e9e1da;
+    margin: 0.5em 0 1.5em;
+    padding: 0.25em 0;
+}
+
+.correspondance h4,
+.correspondance p{
+    margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Test */
+/* -------------------------------------------------------------------------- */
+
+.test-list>li {
+    margin: 0 0 0.7em;
+}
