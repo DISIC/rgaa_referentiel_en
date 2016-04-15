@@ -27,16 +27,17 @@
             </h1>
             <p>The RGAA is the French government's General Accessibility Reference for Administrations. It is meant to provide a way to check compliance against <abbr title="Web Content Accessibility Guidelines, version 2.0">WCAG 2.0</abbr>.</p>
             <p>
-                This document is a property of the French government, under <a hreflang="fr" href="http://wiki.data.gouv.fr/wiki/Licence_Ouverte_/_Open_Licence">Open License 1.0 (in French)</a> or later, as all documents hosted on <a href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr</a>. See the terms and conditions of the license in the <a href="http://references.modernisation.gouv.fr/mentions-legales">legal informations</a>.
+                This document is a property of the French government, under <a hreflang="fr" href="http://wiki.data.gouv.fr/wiki/Licence_Ouverte_/_Open_Licence">Open License 1.0 (in French)</a> or later, as all documents hosted on <a hreflang="fr" href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr (in French)</a>. See the terms and conditions of the license in the <a hreflang="fr" href="http://references.modernisation.gouv.fr/mentions-legales">legal information</a>.
             </p>
             <p>
-                The technical reference guidelines (list of criteria, glossary, particular cases, technical notes, baseline) are an adapted copy of the <a href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">AccessiWeb HTML5 / ARIA</a> guidelines - Working Version as of 12/19/2013 - Edited by BrailleNet.</p>
+                The technical reference guidelines (list of criteria, glossary, particular cases, technical notes, baseline) are an adapted copy of the <a hreflang="fr" href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">AccessiWeb HTML5 / ARIA</a> guidelines - Working Version as of 12/19/2013 - Edited by BrailleNet.</p>
             <p>
                 Disclaimer: this translation is NOT normative. It is available for informational purposes only. The normative version is the <a hreflang="fr" href="http://references.modernisation.gouv.fr/referentiel-technique-0">official RGAA in French</a>.
             </p>
             <p>
-                Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to <a href="mailto:rgaa.sgmap@modernisation.gouv.fr">rgaa.sgmap@modernisation.gouv.fr</a> if you feel corrections are needed.
+                Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to <a href="mailto:rgaa.sgmap@modernisation.gouv.fr">rgaa.sgmap@modernisation.gouv.fr</a>, or submit proposals via <a href="https://github.com/DISIC/rgaa_referentiel_en">the GitHub repository</a>, if you feel corrections are needed.
             </p>
+
             <h2 id="toc">
                 Table of Contents
             </h2>
@@ -473,7 +474,7 @@
                 Design Pattern
             </h3>
             <p>A design pattern is a model defined by the ARIA API describing the structure, roles, properties and behaviors a JavaScript component (widget) must have.</p>
-            <p>The design patterns are described in this document: <a href="http://www.w3.org/WAI/PF/aria-practices/">WAI-ARIA 1.0 Authoring PRactices</a>.
+            <p>The design patterns are described in this document: <a href="http://www.w3.org/WAI/PF/aria-practices/">WAI-ARIA 1.0 Authoring Practices</a>.
             </p>
             <p>A JavaScript-based component must follow the design pattern corresponding with its WAI-ARIA role.
             </p>
@@ -510,7 +511,7 @@
 
             <h3 id="mDocumentOutline">Document outline</h3>
             <p>
-                The Test 9.2.2 requires that the structure of the sectioning elements (<code>NAV</code>), <code>SECTION</code>, <code>ARTICLE</code> for instance) in the page is coherent; meaning it's representative of the document's architecture. This structure is completed by the headings (<code>h1</code> to <code>h6</code> tags) structure, which is also a part of it.
+                The Test 9.2.2 requires that the structure of the sectioning elements (<code>NAV</code>, <code>SECTION</code>, <code>ARTICLE</code> for instance) in the page is coherent; meaning it's representative of the document's architecture. This structure is completed by the headings (<code>h1</code> to <code>h6</code> tags) structure, which is also a part of it.
             </p>
             <p>Inappropriate use of these sectioning elements could result in an incoherent document outline, through excessive use of <code>SECTION</code> or <code>ARTICLE</code> elements for example.</p>
             <p><strong>Note 1:</strong>The document outline algorithm is progressively supported by browsers and assistive technologies. Considering that, in any case, the RGAA requires a robust and coherent headings hierarchy, <strong>it is acceptable to consider the Test 9.2.2 as not applicable</strong> when a perfectly coherent document outline can not be guaranteed. You may read this technical note: <a href="./RGAA3.0_Technical_Notes_English_version_v1.html#TNcrit9-2">Technical note on document outline</a>.</p>
@@ -1054,7 +1055,7 @@
 
             <p>Area with a list of links, giving access to the main parts of the website. Most of times, the navigation menus are the main and secondary menus.
             </p>
-            <p>Note: links found in the footer, pointing to the credits page, the legal information page, the sitemap, and other site-related information pages, are not considered as a navigation menu.</p>
+            <p><strong>Note</strong>: links found in the footer, pointing to the credits page, the legal information page, the sitemap, and other site-related information pages, are not considered as a navigation menu.</p>
             <p>See the technical definition of a navigation area provided by the WAI-ARIA API: <a href="http://www.w3.org/WAI/PF/aria/roles#navigation">navigation (role)</a>.</p>
 
 
@@ -1126,7 +1127,7 @@
 
             <h3 id="mDOM">
                 Properties and methods compliant with the DOM (Document Object Model) specification</h3>
-            <p>The content insertion methods compliant with the DOM specification use properties and methods of the Node object, as opposed to proprietary methods; for example <code>document.write</code>, specific to the Internet Explorer/Microsoft, for legacy IE browsers.
+            <p>The content insertion methods compliant with the DOM specification use properties and methods of the Node object, as opposed to proprietary methods; for example <code>document.write</code>, specific to Microsoft Internet Explorer, for legacy IE browsers.
             </p>
             <ul class="navTheme">
                 <li><a href="#p">Skip to P</a></li>
@@ -1140,12 +1141,11 @@
             <p>Indicates the reading direction of the document or of a chunk of text via the <code>dir</code> attribute. The three accepted values are:</p>
 
             <ul>
-                <li> <code>ltr</code> (left to right) indicates a reading direction from the left to the right;</li>
-                <li><code>rtl</code> (right to left) indicates a reading direction from the right to the left;
-                </li>
+                <li><code>ltr</code> (left to right) indicates a reading direction from the left to the right;</li>
+                <li><code>rtl</code> (right to left) indicates a reading direction from the right to the left;</li>
                 <li><code>auto</code>, which lets the browser determine the reading direction based ont the Unicode characters it finds in content.</li>
             </ul>
-            <p><strong>Note:</strong> When the dir attribute is not set, the default reading direction is from left to right ("ltr" value).
+            <p><strong>Note:</strong> When the <code>dir</code> attribute is not set, the default reading direction is from left to right ("<code>ltr</code>" value).
             </p>
 
 
@@ -1182,7 +1182,7 @@
             </h3>
             <p>Component of the site with which the user can perform searches on all the site's contents.
             </p>
-            <p><strong>Note:</strong> this site-scaled search engine should not be confused with other search engines specific to a subparts of the site's contents, like the products of an online catalogue, or the list of public calls for tenders on a purchasing platform.
+            <p><strong>Note:</strong> this site-scaled search engine should not be confused with other search engines specific to subparts of the site's contents, like the products of an online catalogue, or the list of public calls for tenders on a purchasing platform.
             </p>
             <p>See the technical definition of a search engine as defined by the ARIA API: <a href="https://www.w3.org/WAI/PF/aria/roles#search">search (role)</a>.
             </p>
@@ -1207,7 +1207,7 @@
                 "Site map" page
             </h3>
 
-            <p>Dedicated page presenting the structure of a Web site, generally as lists of categories and subcategories, with links giving access to al the site's pages.
+            <p>Dedicated page presenting the structure of a Web site, generally as lists of categories and subcategories, with links giving access to all the site's pages.
             </p>
             <p><strong>Note 1:</strong> the site map's links may be implemented with <code>a</code> or <code>area</code> tags.
             </p>
@@ -1218,7 +1218,7 @@
                 Styled text
             </h3>
 
-            <p>Text for which presentation is entirely controlled by a style properties, as opposed to by presentational tags.</p>
+            <p>Text for which presentation is entirely controlled by style properties, as opposed to by presentational tags.</p>
 
             <h3 id="mCompAccess">
                 Supported by assistive technologies
@@ -1262,7 +1262,7 @@
             </p>
 
             <h3 id="mSsTitreSynchro">
-                Synchronised captions (media object)
+                Synchronized captions (media object)
             </h3>
 
             <p>Synchronized visual and/or text alternative for both speech and non-speech audio information (including spoken dialogue, but also equivalents for non-dialogue audio information needed to understand the program content, including sound effects, music, laughter, speaker identification and location), needed to understand the media content.</p>
@@ -1302,7 +1302,7 @@
                 Table (for layout)
             </h3>
 
-            <p>Web design technique based on the TABLE and TD elements to position  contents on screen.
+            <p>Web design technique based on the <code>TABLE</code> and <code>TD</code> elements to position  contents on screen.
             </p>
 
             <h3 id="mImgTest">
@@ -1356,7 +1356,7 @@
             <p>
                 A time-based media can be broadcast live or be provided to play in an asynchronous way (prerecorded media).</p>
 
-            <p><strong>Note :</strong> the use of the <code>wmode</code> parameter for a Flash object with the values "<code>transparent</code>" and "<code>opaque</code>" invalidates criterion 4.21 (Can each non time-based media be controlled by the keyboard and by the mouse?). When accessed with a  screenreader, these values make the Flash movie inaccessible (the object is ignored, or can not be browsed). therefore it can not be tabbed to.</p>
+            <p><strong>Note :</strong> the use of the <code>wmode</code> parameter for a Flash object with the values "<code>transparent</code>" and "<code>opaque</code>" invalidates criterion 4.21 (Can each non time-based media be controlled by the keyboard and by the mouse?). When accessed with a  screenreader, these values make the Flash movie inaccessible (the object is ignored, or can not be browsed). Therefore it can not be tabbed to.</p>
             <p>
                 Note 2: Animated GIFs, and JavaScript-based animations  are not considered as time-based media with regards to RGAA.</p>
 
@@ -1372,7 +1372,7 @@
                 Title (of a page)
             </h3>
 
-            <p>Content of the <code>title</code> tag of a Web page, describing in a clear, concise and unique fashion, the page content/nature ("site map www.sitename.fr" for a page dedicated to the sitemap of the sitename.fr site, for example).
+            <p>Content of the <code>title</code> tag of a Web page, describing in a clear, concise and unique fashion, the page content/nature ("site map: www.sitename.fr" for a page dedicated to the sitemap of the sitename.fr site, for example).
             </p>
 
             <ul class="navTheme">
@@ -1441,7 +1441,7 @@
 
                 <li>either belong to the Web site associated with the domain name, if the user has a similar browsing experience as with the other pages of the Web site (for example: same structure, same navigation&hellip;),
                 </li>
-                <li>    or not belong to the Web site associated with the domain name (for example: a blogging platform where all blogs have their own subdomain of the same domain, but bear no similiraties nor relationships with each other).
+                <li>or not belong to the Web site associated with the domain name (for example: a blogging platform where all blogs have their own subdomain of the same domain, but bear no similiraties nor relationships with each other).
                 </li>
             </ul>
         </main>

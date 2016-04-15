@@ -27,15 +27,15 @@
             </h1>
             <p>The RGAA is the French government's General Accessibility Reference for Administrations. It is meant to provide a way to check compliance against <abbr title="Web Content Accessibility Guidelines, version 2.0">WCAG 2.0</abbr>.</p>
             <p>
-                This document is a property of the French government, under <a hreflang="fr" href="http://wiki.data.gouv.fr/wiki/Licence_Ouverte_/_Open_Licence">Open License 1.0 (in French)</a> or later, as all documents hosted on <a href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr</a>. See the terms and conditions of the license in the <a href="http://references.modernisation.gouv.fr/mentions-legales">legal informations</a>.
+                This document is a property of the French government, under <a hreflang="fr" href="http://wiki.data.gouv.fr/wiki/Licence_Ouverte_/_Open_Licence">Open License 1.0 (in French)</a> or later, as all documents hosted on <a hreflang="fr" href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr (in French)</a>. See the terms and conditions of the license in the <a hreflang="fr" href="http://references.modernisation.gouv.fr/mentions-legales">legal information</a>.
             </p>
             <p>
-                The technical reference guidelines (list of criteria, glossary, particular cases, technical notes, baseline) are an adapted copy of the <a href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">AccessiWeb HTML5 / ARIA</a> guidelines - Working Version as of 12/19/2013 - Edited by BrailleNet.</p>
+                The technical reference guidelines (list of criteria, glossary, particular cases, technical notes, baseline) are an adapted copy of the <a hreflang="fr" href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">AccessiWeb HTML5 / ARIA</a> guidelines - Working Version as of 12/19/2013 - Edited by BrailleNet.</p>
             <p>
                 Disclaimer: this translation is NOT normative. It is available for informational purposes only. The normative version is the <a hreflang="fr" href="http://references.modernisation.gouv.fr/referentiel-technique-0">official RGAA in French</a>.
             </p>
             <p>
-                Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to <a href="mailto:rgaa.sgmap@modernisation.gouv.fr">rgaa.sgmap@modernisation.gouv.fr</a> if you feel corrections are needed.
+                Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to <a href="mailto:rgaa.sgmap@modernisation.gouv.fr">rgaa.sgmap@modernisation.gouv.fr</a>, or submit proposals via <a href="https://github.com/DISIC/rgaa_referentiel_en">the GitHub repository</a>, if you feel corrections are needed.
             </p>
             <h2 id="toc">
                 Table of Contents
@@ -112,11 +112,11 @@
                             <strong>Test 1.1.1:</strong> Does each image (<code>img</code> tag) have an <code>alt</code> attribute?
                         </li>
                         <li id="test-1-1-2">
-                            <strong><strong>Test 1.1.2:</strong></strong> Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mZone">area</a> (<code>area</code> tag) of an
+                            <strong>Test 1.1.2:</strong> Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mZone">area</a> (<code>area</code> tag) of an
                             <a href="./RGAA3.0_Glossary_English_version_v1.html#mImgReactive">image map</a> have an <code>alt</code> attribute?
                         </li>
                         <li id="test-1-1-3">
-                            <strong><strong>Test 1.1.3:</strong></strong> Does each form button
+                            <strong>Test 1.1.3:</strong> Does each form button
                             (<code>input</code> tag with the <code>type="image"</code> attribute) have an <code>alt</code>
                             attribute?
                         </li>
@@ -164,7 +164,7 @@
                             <code>&lt;object&gt;</code> and  <code>&lt;/object&gt;</code> empty?
                         </li>
                         <li id="test-1-2-4">
-                            <strong>Test 1.2.4: Does each decorative vector image (<code>svg</code> tag), not conveying any information, and with an alternative, meet the following conditions:</strong>
+                            <strong>Test 1.2.4:</strong> Does each decorative vector image (<code>svg</code> tag), not conveying any information, and with an alternative, meet the following conditions:
                             <ul>
                                 <li>The <code>svg</code> tag has a <code>role="img"</code></li>
                                 <li>The <code>svg</code> tag, or one of its children, has no ARIA role, property or state, that aims at labeling the vector image (<code>aria-label</code>, <code>aria-describedby</code>, or
@@ -1340,12 +1340,13 @@
                                 <li>there is an alternative version with <a href="./RGAA3.0_Glossary_English_version_v1.html#mSsTitreSynchro">synchronized
                                         captions</a> that is accessible via an <a href="./RGAA3.0_Glossary_English_version_v1.html#mLienAdj">
                                         adjacent link</a> (a URL or an  <a href="./RGAA3.0_Glossary_English_version_v1.html#mAncreNom">anchor</a>)</li>
-                                <li id="test-4-3-2"><strong>Test 4.3.2:</strong> For each prerecorded
-                                    synchronized <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaTemp">time-based
-                                        media</a> with <a href="./RGAA3.0_Glossary_English_version_v1.html#mSsTitreSynchro">synchronized
-                                        captions</a> provided through a <code>track</code> tag, does the
-                                    <code>track</code> tag have an attribute <code>kind="captions"</code>?</li>
                             </ul>
+                        </li>
+                        <li id="test-4-3-2"><strong>Test 4.3.2:</strong> For each prerecorded
+                            synchronized <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaTemp">time-based
+                                media</a> with <a href="./RGAA3.0_Glossary_English_version_v1.html#mSsTitreSynchro">synchronized
+                                captions</a> provided through a <code>track</code> tag, does the
+                            <code>track</code> tag have an attribute <code>kind="captions"</code>?
                         </li>
                     </ul>
                     <aside class="correspondance">
@@ -1799,18 +1800,16 @@
 
                               href="./RGAA3.0_Particular_cases_English_version_v1.html#cpCrit4-15">particular cases</a>)?</h3>
                     <ul class="test-list">
-                        <li id="test-4-15-1"> Test
-                            4.15.1: For each audio-only, video-only or
+                        <li id="test-4-15-1"><strong>Test 4.15.1:</strong> For each audio-only, video-only or
                             synchronized <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaTemp">time-based
                                 media</a> , does the adjacent textual content help
                             to clearly identify the time-based media (except
                             in <a title="Particular cases for criterion 4.15"
 
                                   href="./RGAA3.0_Particular_cases_English_version_v1.html#cpCrit4-15">particular cases</a>)?</li>
-                        <li id="test-4-15-2"> Test
-                            4.15.2: For each live audio-only, live video-only or
+                        <li id="test-4-15-2"><strong>Test 4.15.2:</strong> For each live audio-only, live video-only or
                             live synchronized <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaTemp">time-based
-                                media</a> , does the adjacent textual content help
+                                media</a>, does the adjacent textual content help
                             to clearly identify the time-based media (except
                             in <a title="Particular cases for criterion 4.15"
 
@@ -1878,8 +1877,7 @@
                             time-based media</a> with an alternative, is this
                         alternative relevant?</h3>
                     <ul class="test-list">
-                        <li id="test-4-17-1"> Test
-                            4.17.1: For each <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaNoTemp">non
+                        <li id="test-4-17-1"> <strong>Test 4.17.1:</strong> For each <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaNoTemp">non
                                 time-based media</a> with an alternative, does this
                             alternative provide access to the same content, and to
                             similar functionalities?</li>
@@ -1973,8 +1971,7 @@
                                 media</a> have the <a href="./RGAA3.0_Glossary_English_version_v1.html#mFonctionControle">control
                                 features</a> to be played,
                             if necessary?</li>
-                        <li id="test-4-20-2"> Test
-                            4.20.2: For each time-based media, does each control
+                        <li id="test-4-20-2"> <strong>Test 4.20.2:</strong> For each time-based media, does each control
                             feature meet one of the following conditions:
                             <ul>
                                 <li>    The control feature can be
@@ -1987,8 +1984,7 @@
                             </ul>
                         </li>
 
-                        <li id="test-4-20-3"> Test
-                            4.20.3: For each time-based media, does each control
+                        <li id="test-4-20-3"> <strong>Test 4.20.3:</strong> For each time-based media, does each control
                             feature meet one of the following conditions:
                             <ul>
                                 <li>    The control feature
@@ -2016,8 +2012,7 @@
                             time-based media</a> be controlled by the keyboard and
                         by the mouse?</h3>
                     <ul class="test-list">
-                        <li id="test-4-21-1"> Test
-                            4.21.1: For each non time-based media, does each
+                        <li id="test-4-21-1"> <strong>Test 4.21.1:</strong> For each non time-based media, does each
                             control feature meet one of the following conditions:
                             <ul>
                                 <li>    The control feature can be
@@ -2029,8 +2024,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li id="test-4-21-2"> Test
-                            4.21.2: For each non time-based media, does each
+                        <li id="test-4-21-2"> <strong>Test
+                            4.21.2:</strong> For each non time-based media, does each
                             control feature meet one of the following conditions:
                             <ul>
                                 <li>    The control feature
@@ -2061,8 +2056,8 @@
 
                               href="./RGAA3.0_Particular_cases_English_version_v1.html#cpCrit4-22">particular cases</a>)?</h3>
                     <ul class="test-list">
-                        <li id="test-4-22-1"> Test
-                            4.22.1: Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaTemp">time-based
+                        <li id="test-4-22-1"> <strong>Test
+                            4.22.1:</strong> Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaTemp">time-based
                                 media</a> and each non time-based media, inserted
                             via an <code>object</code> or <code>embed</code> tag, meet one of the following
                             conditions (except
@@ -2078,8 +2073,8 @@
                                     same functionalities</li>
                             </ul>
                         </li>
-                        <li id="test-4-22-2">Test
-                            4.22.2: Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaTemp">time-based
+                        <li id="test-4-22-2"><strong>Test
+                            4.22.2:</strong> Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mMediaTemp">time-based
                                 media</a> and each non time-based media, inserted
                             via an <code>object</code> or <code>embed</code> tag, with an alternative <a href="./RGAA3.0_Glossary_English_version_v1.html#mCompAccess">compatible with an accessibility API</a>, meet one of the
                             following conditions?
@@ -2178,8 +2173,8 @@
                             table</a>, is the linearized content still
                         understandable?</h3>
                     <ul class="test-list">
-                        <li id="test-5-3-1"> Test
-                            5.3.1: Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mTabMiseForme">layout
+                        <li id="test-5-3-1"> <strong>Test
+                            5.3.1:</strong> Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mTabMiseForme">layout
                                 table</a> meet the following conditions?
                             <ul>
                                 <li>the
@@ -2608,7 +2603,7 @@
                         except in <a href="./RGAA3.0_Glossary_English_version_v1.html#mAncreNom">anchors</a>,
                         have a <a href="./RGAA3.0_Glossary_English_version_v1.html#mIntituleLien">text</a>?</h3>
                     <ul class="test-list">
-                        <li id="test-6-5-1"> Test 6.5.1 On each Web page, does
+                        <li id="test-6-5-1"> <strong>Test 6.5.1:</strong> On each Web page, does
                             each link (<code>a</code> tag with an <code>href</code>
                             attribute), except in <a href="./RGAA3.0_Glossary_English_version_v1.html#mAncreNom">anchors</a>,
                             have a text between <code>&lt;a&gt;</code> and <code>&lt;/a&gt;</code>? </li>
@@ -3161,7 +3156,7 @@
                     <h3 id="crit-8-8">Criterion 8.8 [AA] On each Web page, is
                         each change in human language relevant?</h3>
                     <ul class="test-list">
-                        <li id="test-8-8-1"> Test8.8.1: On each Web page, is each
+                        <li id="test-8-8-1"> Test 8.8.1: On each Web page, is each
                             change in human language identification (lang and/or
                             xml:lang attribute) technically valid?</li>
                         <li id="test-8-8-2"> <strong>Test 8.8.2:</strong> On each Web page, is each
@@ -4037,8 +4032,8 @@
                                     form field <code>id</code> attribute </li>
                             </ul>
                         </li>
-                        <li id="test-11-1-3">Test
-                            11.1.3: Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mChpSaisie">form
+                        <li id="test-11-1-3"><strong>Test
+                            11.1.3:</strong> Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mChpSaisie">form
                                 field</a> associated with a label, via the ARIA
                             <code>aria-labelledby</code> property, meet the following
                             conditions?
@@ -4242,8 +4237,8 @@
                                     property <code>aria-label</code> is relevant</li>
                             </ul>
                         </li>
-                        <li id="test-11-9-2">Test
-                            11.9.2: In each form, does the text of each <a href="./RGAA3.0_Glossary_English_version_v1.html#mBtnForm">button</a>
+                        <li id="test-11-9-2"><strong>Test
+                            11.9.2:</strong> In each form, does the text of each <a href="./RGAA3.0_Glossary_English_version_v1.html#mBtnForm">button</a>
                             implemented via an ARIA property <code>aria-labelledby</code> meet
                             the following conditions?
                             <ul>
@@ -4281,8 +4276,8 @@
                         <a href="./RGAA3.0_Glossary_English_version_v1.html#mControleSaisie">input
                             control</a> used in a relevant way?</h3>
                     <ul class="test-list">
-                        <li id="test-11-10-1"> Test
-                            11.10.1: For each form, do mandatory fields
+                        <li id="test-11-10-1"> <strong>Test
+                            11.10.1:</strong> For each form, do mandatory fields
                             indications meet one of the following conditions?
                             <ul>
                                 <li>The
@@ -4306,16 +4301,16 @@
                             </ul>
                         </li>
 
-                        <li id="test-11-10-2"> Test
-                            11.10.2: Each mandatory field indication based on the
+                        <li id="test-11-10-2"> <strong>Test
+                            11.10.2:</strong> Each mandatory field indication based on the
                             ARIA properties <code>aria-label</code>, <code>aria-required</code>, or the
                             "<code>required</code>" attribute, must have an explicit visual cue
                             in its label (<code>label</code> tag) or in a chunk of text tied to
                             the form field via the ARIA property <code>aria-describedby</code>
                             or <code>aria-labelledby</code>. Has this rule been followed?</li>
 
-                        <li id="test-11-10-3">Test
-                            11.10.3: Does each mandatory field indication provided
+                        <li id="test-11-10-3"><strong>Test
+                            11.10.3:</strong> Does each mandatory field indication provided
                             via a chunk of text tied by an ARIA property
                             <code>aria-describedby</code> or <code>aria-labelledby</code> meet the following
                             conditions?
@@ -4329,8 +4324,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li id="test-11-10-4">Test
-                            11.10.4: For each form, do the input errors meet one
+                        <li id="test-11-10-4"><strong>Test
+                            11.10.4:</strong> For each form, do the input errors meet one
                             of the following conditions?
                             <ul>
                                 <li> The input error message
@@ -4357,8 +4352,8 @@
                             <code>aria-describedby</code> or <code>aria-labelledby</code>. Has this rule
                             been followed?
                         </li>
-                        <li id="test-11-10-6">Test
-                            11.10.6: Does each input error indication provided via
+                        <li id="test-11-10-6"><strong>Test
+                            11.10.6:</strong> Does each input error indication provided via
                             a chunk of text tied by an ARIA property
                             <code>aria-describedby</code> or <code>aria-labelledby</code> meet the following
                             conditions?
@@ -4372,8 +4367,8 @@
                                     the value of the <code>id</code> attribute</li>
                             </ul>
                         </li>
-                        <li id="test-11-10-7"> Test
-                            11.10.7: For each form, does each mandatory field meet
+                        <li id="test-11-10-7"> <strong>Test
+                            11.10.7</strong>: For each form, does each mandatory field meet
                             one of the following conditions?
                             <ul>
                                 <li>The data
@@ -4390,15 +4385,15 @@
                                     property</li>
                             </ul>
                         </li>
-                        <li id="test-11-10-8"> Test
-                            11.10.8: Each data type and/or format indication based
+                        <li id="test-11-10-8"> <strong>Test
+                            11.10.8</strong>: Each data type and/or format indication based
                             on the ARIA properties <code>aria-label</code> must have an
                             explicit visual cue in its label (<code>label</code> tag) or in a
                             chunk of text tied to the form field via the ARIA
                             property <code>aria-describedby</code> or <code>aria-labelledby</code>. Has this
                             rule been followed?</li>
-                        <li id="test-11-10-9">Test
-                            11.10.9: Does each data type and/or format indication
+                        <li id="test-11-10-9"><strong>Test
+                            11.10.9:</strong> Does each data type and/or format indication
                             provided via a chunk of text tied by an ARIA property
                             <code>aria-describedby</code> or <code>aria-labelledby</code> meet the following
                             conditions?
@@ -4571,12 +4566,12 @@
                                 <li>an assistant is available</li>
                             </ul>
                         </li>
-                        <li id="test-11-14-2">Test
-                            11.14.2: Each indication based on the ARIA property
+                        <li id="test-11-14-2"><strong>Test
+                            11.14.2:</strong> Each indication based on the ARIA property
                             <code>aria-label</code> must have an explicit visual cue. Has this
                             rule been followed?</li>
-                        <li id="test-11-14-3">Test
-                            11.14.3: Does each indication provided via a chunk of
+                        <li id="test-11-14-3"><strong>Test
+                            11.14.3:</strong> Does each indication provided via a chunk of
                             text tied by an ARIA property <code>aria-describedby</code> meet
                             the following conditions?
                             <ul>
@@ -4612,8 +4607,8 @@
                             suggestion based on the ARIA property <code>aria-label</code> must
                             have an explicit visual cue. Has this rule been
                             followed?</li>
-                        <li id="test-11-14-6">Test
-                            11.14.6: Does each input suggestion provided via a
+                        <li id="test-11-14-6"><strong>Test
+                            11.14.6:</strong> Does each input suggestion provided via a
                             chunk of text tied by an ARIA property
                             <code>aria-describedby</code> meet the following conditions?
                             <ul>
@@ -4744,7 +4739,7 @@
                                     order in the source code.</li>
                             </ul>
                         </li>
-                        <li id="test-12-2-2">Test 12.2.2 Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mBarreNav">navigation
+                        <li id="test-12-2-2"><strong>Test 12.2.2:</strong> Does each <a href="./RGAA3.0_Glossary_English_version_v1.html#mBarreNav">navigation
                                 bar</a> that is repeated in a set of pages meet the
                             following conditions (except in <a title="Particular cases for criterion 12.2"
 
@@ -4973,8 +4968,8 @@
                                     named  <a href="./RGAA3.0_Glossary_English_version_v1.html#mAncreNom">anchor</a></li>
                             </ul>
                         </li>
-                        <li id="test-12-10-4">Test
-                            12.10.4: On each Web page, does the <a href="./RGAA3.0_Glossary_English_version_v1.html#mDocumentOutline">document outline</a>
+                        <li id="test-12-10-4"><strong>Test
+                            12.10.4:</strong> On each Web page, does the <a href="./RGAA3.0_Glossary_English_version_v1.html#mDocumentOutline">document outline</a>
                             meet the following conditions?
                             <ul>
                                 <li> The <a href="./RGAA3.0_Glossary_English_version_v1.html#PageHeader">page header</a>
