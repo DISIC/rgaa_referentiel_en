@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>RGAA 3 2016 Baseline - English translation</title>
+        <meta content="English translation of the RGAA 3 2016, French official accessibility guidelines. Baseline." name="description" />
+        <meta content="RGAA, RGAA 3 2016, French accessibility guidelines, English translation, baseline" name="keywords" />
+        <link type="text/css" rel="stylesheet" href="Css/knacss.css" />
+        <link type="text/css" rel="stylesheet" href="Css/RGAA3-en.css" />
+        <style type="text/css">
+            table {
+                margin-top:2em;
+            }
+            td,th {
+                padding:0.25em;
+                border: 1px solid black;
+            }
+            table {
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body class="mw1140p center">
+        <header role="banner">
+            <p id="skiplinks"><a href="#toc">Skip to Table of Contents</a> - <a href="#main">Skip to main content</a></p>
+            <nav id="nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="./introduction-RGAA.html">Introduction to RGAA</a></li>
+                    <li><a href="./rgaa-companion-guide.html">RGAA companion guide</a></li>
+                    <li>Technical reference
+                        <ul>
+                            <li><a href="./criteria.html">Criteria</a></li>
+                            <li><a href="./glossary.html">Glossary</a></li>
+                            <li><a href="./particular-cases.html">Particular cases</a></li>
+                            <li><a href="./technical-notes.html">Technical notes</a></li>
+                            <li>Baseline - current page</li>
+                            <li><a href="./references.html">References</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Baseline</h1>
+            <p>
+                Several RGAA criteria refer  to rendering tests on a range of assistive technologies, browsers and operating systems. This document describes and explains the combinations selected to constitute the baseline.
+            </p>
+
+            <h2 tabindex="-1" id="toc">
+                Table of Contents
+            </h2>
+            <nav id="toc-list" role="navigation" aria-labelledby="toc">
+                <ul>
+                    <li><a href="#compatible">Compatible with assistive technologies - Baseline</a></li>
+                    <li><a href="#baseline">Baseline</a></li>
+                    <li><a href="#additional">Additional requirements</a></li>
+                    <li><a href="#controlled">Controlled environment</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main" role="main">
+
+            <h2 id="compatible">Compatible with assistive technologies - Baseline</h2>
+
+            <p>The reference baseline consists of configurations (assistive technology, operating system, browser) used to declare a HTML5&nbsp;/ ARIA  based piece of software is <a href="http://www.w3.org/Translations/WCAG20-fr/#accessibility-supporteddef">"accessibility supported" as defined by WCAG</a>.</p>
+
+            <p>It is established by consensus from the list of assistive technologies that are in a sufficiently widespread used, or in some cases when provided natively, and is the users' preferred means of access to information and functionality.</p>
+
+            <h2 id="baseline">Baseline</h2>
+
+            <p>The baseline that covers the widest proportion of uses consists of combinations involving assistive technologies sufficiently widespread, the two operating systems Windows XP (and later) and OS&nbsp;X + and the three browsers IE9+, Firefox and Safari.
+            </p>
+            <p>For a HTML5&nbsp;/&nbsp;ARIA device or its alternative to be considered compatible with accessibility, it has to be fully functional in terms of restitution and features, at least for one of the following combinations:
+            </p>
+
+
+
+            <table>
+                <caption>Baseline - Combination 1</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Assistive technology</th><th scope="col">AT version</th><th scope="col">Browser</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NVDA</td><td>Latest version</td><td>Firefox</td>
+                    </tr>
+                    <tr>
+                        <td>JAWS</td><td>Previous version</td><td>Firefox or Internet Explorer 9+</td>
+                    </tr>
+                    <tr>
+                        <td>Voice Over</td><td>Latest version</td><td>Safari</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>Baseline - Combination 2</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Assistive technology</th><th scope="col">AT version</th><th scope="col">Browser</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JAWS</td><td>Previous version</td><td>Firefox</td>
+                    </tr>
+                    <tr>
+                        <td>NVDA</td><td>Latest version</td><td>Firefox or Internet Explorer 9+</td>
+                    </tr>
+                    <tr>
+                        <td>Voice Over</td><td>Latest version</td><td>Safari</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <h2 id="additional">Additional requirements</h2>
+
+            <p>The following rules must be observed:
+            </p>
+            <ol>
+                <li>All HTML5&nbsp;/&nbsp;ARIA devices, or their alternatives, must be fully functional on all pages of the site without needing to use a different assistive technology;</li>
+                <li>When alternatives to HTML5&nbsp;/&nbsp;ARIA devices are proposed, they should not require deactivation of a technology (eg.: JavaScript or Flash plugin) unless there is a feature offered by the website itself. For example:
+                    <ul>
+                        <li>the site provides a fully functional, compliant alternative version, that does not require technologies  that are not accessibility supported;
+                        </li>
+                        <li>the site offers feature allowing to replace HTML5 / ARIA devices by compatible alternative devices;
+                        </li>
+                    </ul>
+                </li>
+                <li>Users of assistive technologies are provided with a means to report issues, and get through a compensation system, the information they would be blocked from otherwise;
+                </li>
+                <li>If a conformance declaration is provided, it must include a list of assistive technologies with which the HTML5&nbsp;/&nbsp;ARIA devices were tested, and the results of these tests (eg. "supported", "not supported", "partially supported"), at least.
+                </li>
+            </ol>
+
+            <h2 id="controlled">Controlled environment</h2>
+
+            <p>When the website is intended to be distributed and used in a <a href="./glossary.html#mEnvMait">controlled environment</a>, the baseline consists of configurations (assistive technology, operating system, browser) actually used in the controlled environment.</p>
+
+            <p>For example, when the website is exclusively distributed in a GNU&nbsp;/&nbsp;Linux environment, the tests must be carried out only on browsers and assistive technologies actually used by users in this environment. This baseline replaces the baseline used in uncontrolled environments.
+            </p>
+        </main>
+        <footer role="contentinfo">
+    <h2>Licence</h2>
+            <p>
+                This document is a property of the State of France, under <a hreflang="fr" href="http://www.etalab.gouv.fr/licence-ouverte-open-licence">Open Licence 1.0 (in French)</a> or later, as all documents hosted on <a hreflang="fr" href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr (in French)</a>. See the terms and conditions of the licence in the <a hreflang="fr" href="http://references.modernisation.gouv.fr/mentions-legales">legal information</a>.
+            </p>
+            <p>
+                The technical reference guidelines (list of criteria, glossary, particular cases, technical notes, baseline) are an adapted copy of the <a hreflang="fr" href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">AccessiWeb HTML5 / ARIA</a> guidelines - Working Version as of 12/19/2013 - Edited by BrailleNet.</p>
+ <h2>Disclaimer</h2>
+            <p>
+                This translation is NOT normative. It is available for informational purposes only. The normative version is the <a hreflang="fr" href="http://references.modernisation.gouv.fr/rgaa/">official RGAA in French</a>.
+            </p>
+            <p>
+                Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to <a href="mailto:rgaa.sgmap@modernisation.gouv.fr">rgaa.sgmap@modernisation.gouv.fr</a> if you feel corrections are needed.
+            </p>
+
+</footer>
+    </body>
+</html>
