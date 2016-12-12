@@ -1,6 +1,8 @@
 # RGAA Guidelines
-## RGAA Version 3.0
+## RGAA Version 3 2016
 
-This repository provide an english version of the French guidelines RGAA. For legal constraints, the official version remains the one in French. However you can use this one with confidence as is the same.
+This repository provides an English version of the French government's General Accessibility Reference for Administrations: the RGAA. For legal constraints, the official version remains the one [in French](https://references.modernisation.gouv.fr/rgaa/). However you can use this English version with confidence, as it is as complete as the original one.
 
-You can read these guidelines starting with [the criteria page](http://disic.github.io/rgaa_referentiel_en/RGAA3.0_Criteria_English_version_v1.html).
+Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to [rgaa.sgmap@modernisation.gouv.fr](mailto:rgaa.sgmap@modernisation.gouv.fr), or open an issue here, if you feel corrections are needed.
+
+
