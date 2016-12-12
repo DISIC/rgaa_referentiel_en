@@ -3,45 +3,40 @@
     <head>
         <meta charset="utf-8">
 
-        <title>RGAA 3.0 Technical notes - English translation</title>
-        <meta content="English translation of the RGAA 3.0, French official accessibility guidelines. Technical notes." name="description" />
-        <meta content="RGAA, RGAA 3.0, French accessibility guidelines, English translation, technical notes" name="keywords" />
+        <title>RGAA 3 2016 Technical notes - English translation</title>
+        <meta content="English translation of the RGAA 3 2016, French official accessibility guidelines. Technical notes." name="description" />
+        <meta content="RGAA, RGAA 3 2016, French accessibility guidelines, English translation, technical notes" name="keywords" />
         <link type="text/css" rel="stylesheet" href="Css/knacss.css" />
         <link type="text/css" rel="stylesheet" href="Css/RGAA3-en.css" />
     </head>
     <body class="mw1140p center">
         <header role="banner">
-            <p id="skiplinks"><a href="#toc">Table of Contents</a></p>
-            <nav id="nav" role="navigation">
+            <p id="skiplinks"><a href="#toc">Skip to Table of Contents</a> - <a href="#main">Skip to main content</a></p>
+            <nav id="nav" role="navigation" aria-label="Main navigation">
                 <ul>
-                    <li><a href="./RGAA3.0_Criteria_English_version_v1.html">Criteria</a></li>
-                    <li><a href="./RGAA3.0_Glossary_English_version_v1.html">Glossary</a></li>
-                    <li><a href="./RGAA3.0_Particular_cases_English_version_v1.html">Particular cases</a></li>
-                    <li>Technical notes</li>
-                    <li><a href="./RGAA3.0_Baseline_English_version_v1.html">Baseline</a></li>
-                    <li><a href="./RGAA3.0_References_English_version_v1.html">References</a></li>
+                    <li><a href="./introduction-RGAA.html">Introduction to RGAA</a></li>
+                    <li><a href="./rgaa-companion-guide.html">RGAA companion guide</a></li>
+                    <li>Technical reference
+                        <ul>
+                            <li><a href="./criteria.html">Criteria</a></li>
+                            <li><a href="./glossary.html">Glossary</a></li>
+                            <li><a href="./particular-cases.html">Particular cases</a></li>
+                            <li>Technical notes - current page</li>
+                            <li><a href="./baseline.html">Baseline</a></li>
+                            <li><a href="./references.html">References</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-            <h1>Technical Notes</h1>
+            <h1>Technical notes</h1>
             <p>
                 The technical notes below provide explanations regarding some HTML5 elements whose support can be inconsistent across different user agents, and propositions made by the RGAA  to circumvent potential issues.
 
             </p>
-            <p>
-                This document is a property of the French government, under <a hreflang="fr" href="http://www.etalab.gouv.fr/licence-ouverte-open-licence">Open License 1.0 (in French)</a> or later, as all documents hosted on <a hreflang="fr" href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr (in French)</a>. See the terms and conditions of the license in the <a hreflang="fr" href="http://references.modernisation.gouv.fr/mentions-legales">legal information</a>.
-            </p>
-            <p>
-                The technical reference guidelines (list of criteria, glossary, particular cases, technical notes, baseline) are an adapted copy of the <a hreflang="fr" href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">AccessiWeb HTML5 / ARIA</a> guidelines - Working Version as of 12/19/2013 - Edited by BrailleNet.</p>
-            <p>
-                Disclaimer: this translation is NOT normative. It is available for informational purposes only. The normative version is the <a hreflang="fr" href="http://references.modernisation.gouv.fr/referentiel-technique-0">official RGAA in French</a>.
-            </p>
-            <p>
-                Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to <a href="mailto:rgaa.sgmap@modernisation.gouv.fr">rgaa.sgmap@modernisation.gouv.fr</a>, or submit proposals via <a href="https://github.com/DISIC/rgaa_referentiel_en">the GitHub repository</a>, if you feel corrections are needed.
-            </p>
-            <h2 id="toc">
+            <h2 tabindex="-1" id="toc">
                 Table of Contents
             </h2>
-            <nav role="navigation" aria-labelledby="toc">
+            <nav id="toc-list" role="navigation" aria-labelledby="toc">
                 <ul>
                     <li><a href="#images">Images</a></li>
                     <li><a href="#tableaux">Tables</a></li>
@@ -54,41 +49,36 @@
             </nav>
         </header>
 
-        <main role="main">
+        <main id="main" role="main">
 
             <h2 id="images">Images</h2>
 
-            <h3 id="TNcrit1-1">Criterion 1.1 [A]</h3>
-
-            <p>Except for <code>svg</code>, the <code>aria-label</code> and <code>aria-labelledby</code> attributes to provide an alternative text, or link the image to a chunk of text provided as an alternative text, can not be used due to lack of support by assistive technologies.
-            </p>
-            <p>The SVG specification recommends using a <code>&lt;title&gt;</code> element for the "short" description and a  <code>&lt;desc&gt;</code> element for the long description. Currently only the <code>&lt;desc&gt;</code> is rendered correctly by assistive technologies. The use of the <code>&lt;title&gt;</code> is considered not accessibility supported.
-            </p>
             <h3 id="TNcrit1-2">Criterion 1.2 [A]</h3>
 
-            <p>When an image is associated with a caption, the WCAG technical note  recommends to systematically provide an alternative text for the image (see criterion 1.10). In this case the criterion 1.2 is not applicable.
+            <p>When an image is associated with a <a href="./glossary.html#mImageCaption">caption</a>, the WCAG technical note  recommends to systematically provide an alternative text for the image (see <a href="./criteria.html#crit-1-10">criterion 1.10</a>). In this case the criterion 1.2 is not applicable.
             </p>
             <p>A WAI-ARIA <code>role="presentation"</code> attribute  can not be used to specify a decorative image, in accordance with  the use of WAI-ARIA roles restrictions, as per the current specifications.
             </p>
-            <h3 id="TNcrit1-3">Criterion 1.3 [A]</h3>
+            <h3 id="TNcrit1-3a">Criterion 1.3 [A]: <code>title</code> attribute</h3>
 
             <p>The WCAG note prohibits the use of the <code>title</code> attribute to replace the <code>alt</code> attribute, however it is often useful to use the <code>title</code> attribute to display a tooltip on particularly obscure images. If the <code>title</code> attribute is used in this way, the content of the <code>title</code> attribute must be strictly identical to the alternative.</p>
+            <h3 id="TNcrit1-3b">Criterion 1.3 [A]: <code>&lt;title&gt;</code> tag in SVG elements</h3>
 
-            <p>With SVG, the lack of support for the <code>&lt;title&gt;</code> element by assistive technologies incurs issues when the <code>&lt;desc&gt;</code> element is used to implement the  short alternative text for the image, whereas the image requires detailed description. In this case it is recommended to use an adjacent text or an adjacent link to provide the detailed description.
+            <p>With SVG, the lack of support for the <code>&lt;title&gt;</code> element by assistive technologies incurs issues when the <code>&lt;desc&gt;</code> element is used to implement the  short alternative text for the image, whereas the image requires a <a href="./glossary.html#mDescDetaillee">detailed description</a>. In this case it is recommended to use an adjacent text or an <a href="./glossary.html#mLienAdj">adjacent link</a> to provide the detailed description.
             </p>
-            <p>The 1.3.7 and 1.3.9 tests are used to verify that the implementation of the alternative is accessibility supported (with the chosen <a href="./RGAA3.0_Baseline_English_version_v1.html">baseline</a>).
+            <p>The 1.3.9 and 1.3.12 tests are used to verify that the implementation of the alternative is <a href="./glossary.html#mCompAccess">accessibility supported</a> (with the chosen <a href="./baseline.html">baseline</a>).
             </p>
 
             <h3 id="TNcrit1-6">Criterion 1.6 [A]</h3>
 
-            <p>With SVG, the lack of support for the <code>&lt;title&gt;</code> element by assistive technologies incurs issues when the <code>&lt;desc&gt;</code> element is used to implement the  short alternative text for the image, whereas the image requires detailed description. In this case it is recommended to use an adjacent text or an adjacent link to provide the detailed description.
+            <p>With SVG, the lack of support for the <code>&lt;title&gt;</code> element by assistive technologies incurs issues when the <code>&lt;desc&gt;</code> element is used to implement the  short alternative text for the image, whereas the image requires <a href="./glossary.html#mDescDetaillee">detailed description</a>. In this case it is recommended to use an adjacent text or an  <a href="./glossary.html#mLienAdj">adjacent link</a> to provide the detailed description.
             </p>
 
             <p>If the <code>&lt;desc&gt;</code> element is used to implement the detailed description, it is recommended to use an <code>aria-label</code> attribute to implement the short alternative  of the image.
             </p>
             <p>The use of the <code>aria-describedby</code> attribute is not possible to link an image to its description, due to lack of support for assistive technologies.
             </p>
-            <p>The adjacent detailed description can be implemented via a <code>&lt;figcaption&gt;</code> in this case the criterion 1.10 must be verified (using <code>&lt;figure&gt;</code>,  <code>role="group"</code>, etc.).
+            <p>The adjacent detailed description can be implemented via a <code>&lt;figcaption&gt;</code> in this case the <a href="./criteria.html#crit-1-10">criterion 1.10</a> must be verified (using <code>&lt;figure&gt;</code>,  <code>role="group"</code>, etc.).
             </p>
             <h3 id="TNcrit1-8">Criteria 1.8 [AA] and 1.9 [AAA]</h3>
 
@@ -102,6 +92,7 @@
             </p>
             <p>The <code>aria-labelledby</code>  and <code>aria-describedby</code> attributes can not be currently used, due to lack of support by assistive technologies.
             </p>
+            <p><strong>Note:</strong> Captioned images must also meet <a href="./criteria.html#crit-1-3">criterion 1.3</a> relative to images conveying information.</p>
             <h2 id="tableaux">Tables</h2>
 
             <h3 id="TNcrit5-1">Criterion 5.1 [A]</h3>
@@ -112,9 +103,9 @@
 
             <h2 id="script">Scripts</h2>
 
-            <h3 id="TNcrit7-1">Alternative to JavaScript and compatibility of user interface components with assistive technologies</h3>
+            <h3 id="TNcrit7-1">Criterion 7.1 [A]</h3>
 
-            <p>Criterion 7.1 implements the concept of "compatible with assistive technologies" as defined by the WCAG 2, as well as the use of WAI-ARIA API to make a component or  functionality accessible. The proper use of the WAI-ARIA API is verified through tests 7.1.3, 7.1.4, 7.1.5 and 7.1.6.</p>
+            <p>Criterion 7.1 implements the concept of  "<a href="./glossary.html#mCompAccess">supported by assistive technologies</a>" as defined by the WCAG, as well as the use of the WAI-ARIA API to make a component or  functionality accessible. The proper use of the WAI-ARIA API is verified through tests 7.1.3, 7.1.4, 7.1.5 and 7.1.6.</p>
 
             <p><strong>Important note</strong>: in an HTML5 environment, many components may require JavaScript to function. In the case of a JavaScript component that could not be made ​​accessible, when an alternative is provided, a method must be provided specifically for the faulty component to enable the user to replace it (or turn it on again) with its accessible alternative.</p>
 
@@ -122,7 +113,7 @@
             </p>
             <h3 id="TNcrit7-3">Criterion 7.3 [A]</h3>
 
-            <p>For certain user interface components design patterns, ARIA defines a set of keyboard interactions  based on Esc, Spacebar, Tab and arrow keys; and, occasionally, other interactions based on Page Up, Page Down, Home and End keys, for example. In order to allow gradual implementation of these components with complex keyboard interactions, the RGAA restricts the requirements to only main keys (Esc, Spacebar, Tab, Arrow keys) as per the <a href="./RGAA3.0_Glossary_English_version_v1.html#mDesignPattern">ARIA  design patterns</a>.
+            <p>For certain user interface components design patterns, ARIA defines a set of keyboard interactions  based on <kbd>Esc</kbd>, <kbd>Space bar</kbd>, <kbd>Tab</kbd> and arrow keys; and, occasionally, other interactions based on <kbd>Page Up</kbd>, <kbd>Page Down</kbd>, <kbd>Home</kbd> and <kbd>End</kbd> keys, for example. In order to allow gradual implementation of these components with complex keyboard interactions, the RGAA restricts the requirements to only main keys (the <kbd>Esc</kbd>, <kbd>Space bar</kbd>, <kbd>Tab</kbd>, and arrow keys) as per the <a href="./glossary.html#mDesignPattern">ARIA  design patterns</a>.
             </p>
             <h2 id="structure">Information structure</h2>
 
@@ -134,11 +125,11 @@
             </p>
             <h3 id="TNcrit9-2">Criterion 9.2 [A]</h3>
 
-            <p>The document tree (outline) is generated by the use of sectioning<code> &lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;aside&gt;</code>  tags, and implicit sections generated by using a <code>&lt;h<i>x</i>&gt;</code> (when the <code>&lt;h<i>x</i>&gt;</code> is not the first child of a section).</p>
+            <p>The document tree (<a href="./glossary.html#mDocumentOutline">outline</a>) is generated by the use of sectioning<code> &lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;aside&gt;</code>  tags, and implicit sections generated by using a <code>&lt;h<i>x</i>&gt;</code> (when the <code>&lt;h<i>x</i>&gt;</code> is not the first child of a section).</p>
 
             <p>A sectioning tag is used to structure or group content, parts of a content, or a set of contents that can be considered independently of the rest of the document.
             </p>
-            <p>A navigation area in the site or in a subpart of the site, a table of contents or the navigation area of a collection of pages (<code>&lt;nav&gt;</code>), a content "complementary" to main content (<code>&lt;aside&gt;</code>), the main content or the grouping of several content like articles (<code>&lt;article&gt;</code> or <code>&lt;section&gt;</code>) or a secondary content such as a comment, a Twitter widget, RSS feeds (<code>&lt;article&gt;</code> or <code>&lt;section&gt;</code>) are examples of sectioning contents.
+            <p>A <a href="./glossary.html#mMenuNav">navigation area</a> in the site or in a subpart of the site, a table of contents or the navigation area of a  <a href="./glossary.html#mCollecPage">collection of pages</a> (<code>&lt;nav&gt;</code>), a content "complementary" to <a href="./glossary.html#mMain">main content</a> (<code>&lt;aside&gt;</code>), the main content or the grouping of several content like articles (<code>&lt;article&gt;</code> or <code>&lt;section&gt;</code>) or a secondary content such as a comment, a Twitter widget, RSS feeds (<code>&lt;article&gt;</code> or <code>&lt;section&gt;</code>) are examples of sectioning contents.
             </p>
             <p>In the case of content, as opposed to the navigation areas (<code>&lt;nav&gt;</code>) or complementary content areas (<code>&lt;aside&gt;</code>), a section should have, if appropriate, a header (<code>&lt;header&gt;</code>) and footer (<code>&lt;footer&gt;</code>).
             </p>
@@ -165,12 +156,7 @@
 
             <p>The roles <code>tree</code>, <code>tablist</code>, <code>menu</code>, <code>combobox</code> and <code>listbox</code> are not equivalent to an HTML <code>ul</code> or <code>ol</code> list.
             </p>
-            <p>References: <a href="http://www.w3.org/WAI/PF/aria/roles#list">The Role Model,  List Role</a> and <a href="http://www.w3.org/WAI/PF/aria/states_and_properties#aria-setsize">The role model - ARIA SETSIZE</a>.</p>
-
-            <h3 id="TNcrit9-4">Criterion 9.4 [AAA]</h3>
-
-
-            <p>Despite the existence of the <code>definition</code> role, used in combination with the <code>aria-labelledby</code> property, WAI-ARIA does not offer a role equivalent  to HTML definition lists (<code>DL</code>). The  <code>definition</code> role can not, therefore, be used as an equivalent of an HTML definition list <code>DL</code>.</p>
+            <p>References: <a href="http://www.w3.org/WAI/PF/aria/roles#list">The Roles model - list</a>.</p>
 
             <h2 id="presentation">Presentation of information</h2>
 
@@ -178,7 +164,7 @@
 
             <p>WAI-ARIA provides an <code>aria-hidden</code> property (<code>true</code> or <code>false</code>) that inhibits the rendering of a content to assistive technologies, without affecting its visibility with visual user agents: content with <code>aria-hidden="true"</code> will not be spoken out but remains visible. Unless the content controlled by <code>aria-hidden</code> is not intended to be rendered by assistive technologies, the value of the <code>aria-hidden</code> attribute must be consistent with the displayed or hidden status of the on-screen content.
             </p>
-            <p>The HTML5 specification describes a <code>hidden</code> attribute that can make unavailable (when the hidden attribute is present) content in the generated DOM (similar to <code>type="hidden"</code> on a form control). Unless the content controlled by <code>hidden</code> is not intended to be rendered by assistive technologies, the value of the <code>hidden</code> attribute must be consistent with the displayed or hidden status of the on-screen content.</p>
+            <p>The HTML5 specification describes a <code>hidden</code> attribute that can make unavailable (when the hidden attribute is present) content in the generated DOM (similar to <code>type="hidden"</code> on a form control).</p>
 
             <p>There can be situations where a  content controlled with <code>hidden</code> or <code>aria-hidden</code> is momentarily in an inconsistent state with the displayed or hidden  status of the content, for example when an item is meant to be available but visually displayed only upon further action. In this case, it is the final state of the content that should be considered for validation of this criterion.</p>
 
@@ -189,15 +175,31 @@
 
             <p>Some types of HTML5 form controls manage help messages on input automatically. For example, input fields of type  <code>email</code> display a message like "Please enter a valid email address" if the entered email address does not match the expected format. These messages are customizable via the API Constraint Validation, which provides ability to customize error messages. This validates the criterion, however, authors are warned that support of this API is not yet stabilized. The <code>pattern</code> type that can automatically perform format control (using regular expressions) also displays a help message but it is customizable via the <code>title</code> attribute; this mechanism validates the criterion.
             </p>
-            <p>Reference: <a href="http://www.whatwg.org/specs/web-apps/current-work/#constraint-validation">WHATWG - 4.10.21.3 The constraint validation API</a>.
+            <p>Reference: <a href="https://html.spec.whatwg.org/#constraint-validation">WHATWG - 4.10.21.3 The constraint validation API</a>.
             </p>
             
             <h2 id="navigation">Navigation</h2>
 
             <h3 id="TNcrit12-10">Criterion 12.10 [A]</h3>
 
-            <p>WAI-ARIA provides roles to indicate the main areas (regions) of the document. These roles are very beneficial to users of screen readers in particular, but also to sighted  keyboard users who can benefit from features allowing rapid navigation  in the document structure. While most screen readers make  these features available to users, browsers have not yet proposed dedicated navigation features for users who rey on keyboard eclusively. The implementation of skip links remains a requirement.</p>
+            <p>WAI-ARIA provides roles to indicate the main areas (regions) of the document. These roles are very beneficial to users of screen readers in particular, but also to sighted keyboard users who can benefit from features allowing rapid navigation  in the document structure. While most screen readers make  these features available to users, browsers have not yet proposed dedicated navigation features for users who rely on keyboard exclusively. The implementation of skip links remains a requirement.</p>
 
         </main>
+<footer role="contentinfo">
+    <h2>Licence</h2>
+            <p>
+                This document is a property of the State of France, under <a hreflang="fr" href="http://www.etalab.gouv.fr/licence-ouverte-open-licence">Open Licence 1.0 (in French)</a> or later, as all documents hosted on <a hreflang="fr" href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr (in French)</a>. See the terms and conditions of the licence in the <a hreflang="fr" href="http://references.modernisation.gouv.fr/mentions-legales">legal information</a>.
+            </p>
+            <p>
+                The technical reference guidelines (list of criteria, glossary, particular cases, technical notes, baseline) are an adapted copy of the <a hreflang="fr" href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">AccessiWeb HTML5 / ARIA</a> guidelines - Working Version as of 12/19/2013 - Edited by BrailleNet.</p>
+ <h2>Disclaimer</h2>
+            <p>
+                This translation is NOT normative. It is available for informational purposes only. The normative version is the <a hreflang="fr" href="http://references.modernisation.gouv.fr/rgaa/">official RGAA in French</a>.
+            </p>
+            <p>
+                Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to <a href="mailto:rgaa.sgmap@modernisation.gouv.fr">rgaa.sgmap@modernisation.gouv.fr</a>, or submit proposals via <a href="https://github.com/DISIC/rgaa_referentiel_en">the GitHub repository</a>, if you feel corrections are needed.
+            </p>
+
+</footer>
     </body>
 </html>

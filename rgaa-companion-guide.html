@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>RGAA 3 2016 companion guide - English translation</title>
+        <meta content="English translation of the RGAA 3 2016, French official accessibility guidelines. Companion guide." name="description" />
+        <meta content="RGAA, RGAA 3 2016, French accessibility guidelines, English translation, companion guide" name="keywords" />
+        <link type="text/css" rel="stylesheet" href="Css/knacss.css" />
+        <link type="text/css" rel="stylesheet" href="Css/RGAA3-en.css" />
+    </head>
+    <body class="mw1140p center">
+        <header role="banner">
+            <p id="skiplinks"><a href="#toc">Skip to Table of Contents</a> - <a href="#main">Skip to main content</a></p>
+            <nav id="nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="./introduction-RGAA.html">Introduction to RGAA</a></li>
+                    <li>RGAA companion guide - current page</li>
+                    <li>Technical reference
+                        <ul>
+                            <li><a href="./criteria.html">Criteria</a></li>
+                            <li><a href="./glossary.html">Glossary</a></li>
+                            <li><a href="./particular-cases.html">Particular cases</a></li>
+                            <li><a href="./technical-notes.html">Technical notes</a></li>
+                            <li><a href="./baseline.html">Baseline</a></li>
+                            <li><a href="./references.html">References</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1><abbr lang="fr" title="Référentiel Général d'Accessibilité pour les Administrations">RGAA</abbr> companion guide</h1>
+         </header>
+
+
+
+
+   <h2 id="title-toc">Table of Contents</h2>
+<nav id="toc" tabindex="-1">
+<ul>
+    <li><a href="#1">1. Organization of the companion guide</a>
+        <ul>
+            <li><a href="#1.1">1.1. Foreword: challenge and overview of the RGAA</a></li>
+            <li><a href="#1.2">1.2. Accessibility framework: context, approach and evolution of the RGAA</a></li>
+            <li><a href="#1.3">1.3. A guide to the application of the RGAA</a></li>
+        </ul>
+    </li>
+    <li><a href="#2">2. Foreword: Issue and Overview of the RGAA</a>
+        <ul>
+            <li><a href="#2.1">2.1. Impairment, disability and handicap: a question of context</a></li>
+            <li><a href="#2.2">2.2. The lack of accessibility, exclusion factor</a></li>
+            <li><a href="#2.3">2.3. How to solve a lack of accessibility?</a></li>
+            <li><a href="#2.4">2.4. Scope of the RGAA</a></li>
+            <li><a href="#2.5">2.5. Making the Web more Accessible</a></li>
+            <li><a href="#2.6">2.6. The chain of responsibility for digital accessibility</a>
+                <ul>
+                    <li><a href="#2.6.1">2.6.1. The State</a></li>
+                    <li><a href="#2.6.2">2.6.2. Principal - Project management office</a></li>
+                    <li><a href="#2.6.3">2.6.3. Engineering team</a></li>
+                    <li><a href="#2.6.4">2.6.4. Editorial staff</a></li>
+                    <li><a href="#2.6.5">2.6.5. IT Management</a></li>
+                    <li><a href="#2.6.6">2.6.6. Users of online services on the Internet</a></li>
+                </ul>
+            </li>
+            <li><a href="#2.7">2.7. Questions &amp; answers</a>
+                <ul>
+                    <li><a href="#2.7.1">2.7.1. What is the RGAA?</a></li>
+                    <li><a href="#2.7.2">2.7.2. Who is affected by the obligation to conform?</a></li>
+                    <li><a href="#2.7.3">2.7.3. What are the legally enforceable documents of the RGAA?</a></li>
+                    <li><a href="#2.7.4">2.7.4. What level of accessibility is legally required?</a></li>
+                    <li><a href="#2.7.5">2.7.5. What is the deadline for conformance?</a></li>
+                    <li><a href="#2.7.6">2.7.6. In addition to the conformance of the site or the application, are there documents to be published to fulfill the legal obligation?</a></li>
+                    <li><a href="#2.7.7">2.7.7. What are the penalties for non-conformance?</a></li>
+                    <li><a href="#2.7.8">2.7.8. Who verifies that the legal obligation is respected?</a></li>
+                    <li><a href="#2.7.9">2.7.9. What are the channels covered by the RGAA?</a></li>
+                    <li><a href="#2.7.10">2.7.10. Does the RGAA also cover mobile applications?</a></li>
+                    <li><a href="#2.7.11">2.7.11. Is the RGAA applicable to make workplaces accessible?</a></li>
+                    <li><a href="#2.7.12">2.7.12. Does the RGAA impose technical solutions?</a></li>
+                    <li><a href="#2.7.13">2.7.13. Is the RGAA comprehensive in its recommendations?</a></li>
+                    <li><a href="#2.7.14">2.7.14. Is it allowed to use a technical standard other than the one recommended by the RGAA to verify conformance with WCAG 2.0</a></li>
+                    <li><a href="#2.7.15">2.7.15. What are the costs of conforming to accessibility standards for a digital system?</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#3">3. Part 1: Accessibility Framework: The Context, Approach and Evolution of the RGAA</a>
+        <ul>
+            <li><a href="#3.1">3.1. Context and environment</a>
+                   <ul>
+                        <li><a href="#3.1.1">3.1.1. The stakes</a></li>
+                        <li><a href="#3.1.2">3.1.2. e-Government</a></li>
+                        <li><a href="#3.1.3">3.1.3. The legislative framework</a></li>
+                    </ul>
+            </li>
+            <li><a href="#3.2">3.2. Development approach</a>
+                <ul>
+                    <li><a href="#3.2.1">3.2.1. Approach and orientation</a></li>
+                    <li><a href="#3.2.2">3.2.2. Evolution of the RGAA to version 3</a></li>
+                    <li><a href="#3.2.3">3.2.3. Revision of the RGAA documents</a></li>
+                    <li><a href="#3.2.4">3.2.4. Governance of the update process</a></li>
+                </ul>
+            </li>
+            <li><a href="#3.3">3.3. Modalities of the document</a>
+                <ul>
+                    <li><a href="#3.3.1">3.3.1. Evolution of the document</a></li>
+                    <li><a href="#3.3.2">3.3.2. Property and liability</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#4">4. Part 2: Part 2: Application guide for the RGAA</a>
+            <ul>
+                <li><a href="#4.1">4.1. Scope of the RGAA</a>
+                    <ul>
+                        <li><a href="#4.1.1">4.1.1. Services concerned</a></li>
+                        <li><a href="#4.1.2">4.1.2. Contents concerned</a></li>
+                    </ul>
+                </li>
+               <li> <a href="#4.2">4.2. Application of the RGAA</a>
+                    <ul>
+                        <li><a href="#4.2.1">4.2.1. Levels of conformance with accessibility standards</a></li>
+                        <li><a href="#4.2.2">4.2.2. Accessibility approach</a></li>
+                        <li><a href="#4.2.3">4.2.3. Requirement for reasonable accommodation</a></li>
+                        <li><a href="#4.2.4">4.2.4. The notion of "baseline"</a></li>
+                        <li><a href="#4.2.5">4.2.5. Conformance claim</a></li>
+                        <li><a href="#4.2.6">4.2.6. List of permitted derogations and principle of compensation</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </li>
+    <li><a href="#5">5. Versioning</a></li>
+</ul>
+</nav>
+<main id="main" role="main">
+<h2 tabindex="-1" id="1">1. Organization of the companion guide</h2>
+
+<p>The companion guide specifies the context of the General Accessibility Framework for Administrations (RGAA) and defines the terms and conditions for its application: it specifies in particular the obligations in terms of conformance, the publication of results and the management of derogations.</p>
+
+<p>It is organized in three parts: the "Foreword", the "Accessibility Framework" and the "Guide to the application of the RGAA".</p>
+
+<p>The RGAA represents a coherent set of documents whose conformance is imposed by decree. It is composed of three documents:</p>
+
+<ul>
+    <li>The document "Introduction to the RGAA", which defines the challenges and issues of digital accessibility;</li>
+<li>This "Companion Document";</li>
+<li>The "Technical Reference", itself composed of 6 sections:
+    <ul>
+        <li>List of criteria and tests;</li>
+        <li>Glossary;</li>
+        <li>Special cases;</li>
+        <li>Technical notes;</li>
+        <li>Baseline;</li>
+        <li>References.</li>
+    </ul>
+</li>
+</ul>
+<h3 tabindex="-1" id="1.1">1.1. Foreword: Challenge and overview of the RGAA</h3>
+
+<p>The foreword introduces the issue of accessibility and presents an overview of the RGAA. Its goal is to provide concrete answers to questions that may arise.</p>
+
+<p>It is aimed primarily at decision makers and managers of administrative authorities.
+</p>
+<h3 tabindex="-1" id="1.2">1.2. Accessibility framework: context, approach and evolution of the RGAA</h3>
+
+<p>The accessibility framework provides the context that led to the development of the RGAA, as well as the principles adopted for its design, evolution and perimeter.
+</p>
+<p>It is aimed at the directorates and project management offices of the administrative authorities working in the fields of organization and information systems.
+</p>
+<h3 tabindex="-1" id="1.3">1.3. A guide to the application of the RGAA</h3>
+
+<p>This section describes the application of the RGAA: its scope of application, the actions to be implemented in the context of accessibility, the verification of conformance of contents and the conformance claim.
+</p>
+<p>It is aimed specifically at project managers, architects and developers working on web projects related to e-government.
+</p>
+<h2 tabindex="-1" id="2">2. Foreword: challenge and overview of the RGAA</h2>
+
+<p>The RGAA (General Accessibility Framework for Administrations) aims to verify the accessibility of content and applications presented in digital form and operable through a Web browser, whatever the medium.</p>
+
+<p>In its current version, it guides the administrative authorities in the adoption and implementation of good practices ensuring the accessibility of these Web contents to all publics, whatever their physical or mental abilities. In order to do so, it provides a technical reference to verify conformance with standards, and to measure conformance of Web content with international standards.</p>
+
+<h3 tabindex="-1" id="2.1">2.1. Impairment, disability and handicap: a question of context</h3>
+
+<p>The World Health Organization, in its <a href="#ftn1" id="body-ftn1">first definition in 1980<sup aria-hidden="true">1</sup></a>, made a distinction between the notions of impairment, disability and handicap.</p>
+
+<p>Impairments are deviations in the functioning of an organ or sense, compared to the normal functioning of that organ. The main impairments are of three types:
+</p>
+<ul>
+    <li>Sensory;</li>
+    <li>Mental;</li>
+    <li>Motor related.</li>
+</ul>
+<p>These impairments can lead to disabilities, meaning some incapacities for the impaired person to perform certain actions.</p>
+
+<p>Handicap is defined as the loss or restriction of an individual's participation in the life of the community on an equal basis with others. The French translation of the International Classification of Disability referred to "disadvantage".
+</p>
+<p>This first definition, although interesting, was unsatisfactory because it focused the issue on the individual. The <a href="#ftn2" id="body-ftn2">latest definition by the WHO, issued in 2001<sup aria-hidden="true">2</sup></a>, employs "disability" as an umbrella term for impairments, activity limitations and participation restrictions. Disability is described as the interaction between subjects with a medical condition and personal and environmental factors.
+</p>
+<p>This was reflected in France by the concept of "<span lang="fr">situation de handicap</span>" (handicap situation).
+</p>
+<p>The <a href="#ftn3" id="body-ftn3">French law<sup aria-hidden="true">3</sup></a> defines disability as:</p>
+<blockquote>
+<p>Any limitation on the activity or restriction of participation in society in a person's environment due to a substantial, lasting or definitive alteration of one or more physical, sensory, mental, cognitive or psychological functions, a polyhandicap or a disabling medical condition.
+</p>
+</blockquote>
+<p>Disability is therefore directly linked to a context, for example:
+</p>
+<ul><li>A paraplegic person has a motor impairment. This impairment does not necessarily lead to disability to use a computer if only the lower body is affected but causes a handicap to access certain buildings or means of transport.</li>
+<li>Some hearing impaired persons will be handicapped without equipment to communicate by telephone but will not be handicapped if they can read and communicate by email or SMS.</li>
+<li>A deaf person practicing sign language is handicapped in an assembly of hearing persons and, conversely, a hearing person is also disabled in an assembly of deaf people who use only sign language.</li>
+</ul>
+<p>All human beings may be impaired at some point in their lives. These impairment may be present from birth, but may also occur later and be related to diseases, accidents, or ageing.
+</p>
+<h3 tabindex="-1" id="2.2">2.2. The lack of accessibility, exclusion factor</h3>
+
+<p>It is often a lack of accessibility that best highlights the concept and the interest of accessibility.
+</p>
+<p>When an online application, service or communication is put in place, if it is not accessible, it will incur an unequal treatment between the citizens who can access them and those who can not.
+</p>
+<p>In everyday life, the lack of accessibility of public or private buildings, by the mere fact of having stairs as the only means of access, is one of the most egregious examples of inequality of access between persons with disabilities, or elderly persons, and persons without disabilities.
+</p>
+<p>The lack of accessibility also exists in the digital world. The implementation of user interfaces is often the opportunity to observe gaps in accessibility, in particular due to the absence of alternative solutions to compensate for various visual, auditory, motor or cognitive impairments. Web content is particularly concerned as it relies on many different delivery modes (text, audio, video).
+</p>
+<h3 tabindex="-1" id="2.3">2.3. How to solve a lack of accessibility?</h3>
+<p>
+In order to improve accessibility, it is essential to take account of all the disabilities and to implement norms and standards to improve accessibility. And, where appropriate, provide alternative solutions enabling the same Level of information and similar functionalities for the entire population.</p>
+
+<p>It is not a matter of developing specific technical solutions, but of enabling everyone to access the same content and functionality, regardless of how the users of the service use a computer (keyboard only - without a mouse -, with specific technologies such as a virtual keyboards, screen readers coupled with a Braille display, etc.).
+</p>
+<h3 tabindex="-1" id="2.4">2.4. Scope of the RGAA</h3>
+
+<p>Like many other countries, in order to improve the accessibility of online services and therefore access to information and services, the French State wished to reference a number of rules and standards, and propose a set of ests to ensure conformance of Web content with these rules. The RGAA meets this objective. It results from <a href="#ftn4" id="body-ftn4">Article 47 of the Law &#8470; 2005-102 of February 11, 2005<sup aria-hidden="true">4</sup></a> for equal rights and opportunities, participation and citizenship of people with disabilities, which provides, notably:
+</p>
+<blockquote>
+<p>The online public communication services of the State, territorial collectivities, and public institutions that depend on them, must be accessible to persons with disabilities. The accessibility of online public communication services concerns the access to any type of information in digital form, regardless of the means of access, the content and the method of consultation. International recommendations for Internet accessibility should be applied for online public communication services. [&hellip;]
+</p>
+</blockquote>
+<p>It should be noted that the purpose of the Act is to provide persons with disabilities with access to "any type of information in digital form" and to do so, requires conformance with international recommendations. Since international recommendations are not very operational, it is difficult to use them directly. It is for this reason that the State has made available the RGAA with a technical reference system to verify the correct application of the international rules.
+</p>
+<h3 tabindex="-1" id="2.5">2.5. Making the Web more accessible
+</h3>
+<p>Work has been undertaken internationally to improve the accessibility of Web content, with the Web Accessibility Initiative (WAI) started in 1996 by the World Wide Web Consortium (W3C).
+</p>
+<p>The main mission of the WAI is to propose technical solutions to make the Web accessible to people with disabilities. These recommendations called <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines</a>, or <a href="#ftn5" id="body-ftn5">WCAG<sup aria-hidden="true">5</sup></a>, issued and updated by the WAI, currently form a technical consensus, applied by accessibility practitioners and transposed as an <a href="#ftn6" id="body-ftn6">ISO standard<sup aria-hidden="true">6</sup></a> since October 26, 2012.
+</p>
+
+<p>Focusing on ever-changing technologies, the RGAA is a living document that will need to be updated regularly. This release outlines the current status of accessibility issues for Web content. It is intended to support the administrative authorities in their strategic and technical choices through the provision of a technical reference system, including a precise list of accessibility criteria and tests.
+</p>
+<h3 tabindex="-1" id="2.6">2.6. The chain of responsibility for digital accessibility</h3>
+<p>
+The technical rules for making accessible digital content are rarely complex. The difficulty lies more in the fact that digital accessibility can not be achieved without the participation of all the actors involved in the creation, maintenance and use of digital systems. Each actor thus has a responsibility to assume.
+</p>
+<h4 tabindex="-1" id="2.6.1">2.6.1. The State</h4>
+<p>
+The role of the State is to ensure that every citizen can enjoy their rights and freedoms on an equal basis with others, without discrimination.
+</p>
+<p>Its first duty was to set up the legal framework to cover new forms of participation in social life via digital means. This was done by article 47 of the law 2005-102 of February 11, 2005, the decree of application and the ruling that followed. By providing operational and up-to-date resources to understand and apply international rules with the RGAA, the government accompanies the implementation of its policy.
+
+</p>
+<p>Finally, by providing documentation and companion resources to inform, sensitize and develop the training of all actors, the State must work towards making the RGAA even more operational to accompany change.
+</p>
+<p>The State is to be taken here in its political sense. Concrete implementation by public employers is covered by the following sections.
+
+</p>
+<h4 tabindex="-1" id="2.6.2">2.6.2. Principal - Project management office</h4>
+
+<p>The project manager has a decision-making role. It must set as priority the delivery of products conforming with the legislation, and that are non-discriminatory.
+</p>
+<p>Conformance with the RGAA must be the subject of an explicit request in all specifications regarding the choice of digital equipment (website, business application, online software&hellip;). This requirement must be part of the selection criteria of a candidate.
+</p>
+<p>As the client is responsible for ensuring that the delivered product conforms to the expressed need, it is the responsibility of the client to check the accessibility of the product delivered. It is up to them to check, or make check, that the rules are followed.</p>
+
+<p>Besides, in the case of conflicting requirements, it has the duty to arbitrate in favor of accessibility. This includes not requiring things that can not be made accessible, or accepting compromises to give everyone access to the same content and similar functionality in another form.
+</p>
+<p>For example, let's consider the case of a graphic charter imposed by the originator. Either it ensures upstream that this charter is sufficiently contrasted, or it accepts that an alternative version with reinforced contrasts, in accordance with the requirements of the RGAA, is proposed in addition to the original graphic charter.
+</p>
+<p>In order to ensure that the work delivered is conforming, it is strongly recommended to entrust the verification of conformance to an expert, independent of the department or organization that carried out the work, to avoid conflicts of interest. This expert may be a trained member of the administration who has not directly worked on the project, or an external contractor.
+</p>
+<h4 tabindex="-1" id="2.6.3">2.6.3. Engineering team</h4>
+
+<p>The engineering team develops the site, the application or the software ordered.
+</p>
+<p>They ought to train, even to be accompanied if necessary, and to take into account the accessibility rules. It is their responsibility to deliver work that conforms to the RGAA.
+
+</p>
+<p>As a professional knowledgeable in the assessment of technical issues, it is their duty to alert the contracting authority if  technical constraints are detected, that are insurmountable with regards to accessibility, or that require design or technical choices compromises.
+</p>
+<h4 tabindex="-1" id="2.6.4">2.6.4. Editorial staff</h4>
+
+<p>Managing editorial content online is often the work of several contributors, not necessarily all perfectly trained. The editorial manager has the duty to train the contributors or to set up processes to take account of the accessibility in the provision of new contents.
+</p>
+<h4 tabindex="-1" id="2.6.5">2.6.5. IT management</h4>
+
+<p>With outdated systems and browsers, users of assistive technologies do not take advantage of modern technologies in an accessible way.
+</p>
+<p>It is the responsibility of IT departments  of public organizations, to provide their agents with the technical framework enabling them to take full advantage of the accessibility of applications and internal sites. It is their responsibility to keep the computer fleet up-to-date with recent versions of operating systems, browsers and assistive technologies in combinations that are compatible with accessibility.</p>
+
+<h4 tabindex="-1" id="2.6.6">2.6.6. Users of online services on the Internet</h4>
+
+<p>This section applies only to persons accessing an online service on the Internet and for whom it is not possible to know precisely their Web browsing configuration (operating system, browser, assistive technology). In addition to the administrations working on the conformance of their online services, it is necessary for users to update their browser and their assistive technology to benefit from technical advances in accessibility.
+</p>
+<p>Anyone who uncovers an accessibility defect should be able to report it to the administration concerned, in order to alert them and give them the opportunity to improve accessibility.
+</p>
+<p>Finally, a person who can not access an online service and does not get a response from the administration concerned can also alert the <span lang="fr">Défenseur des Droits</span> (<i>Translator comment: Rights Defender</i>).
+</p>
+<h3 tabindex="-1" id="2.7">2.7. Questions &amp; answers</h3>
+
+<p>This section provides a synthesis to answer questions about the application of the RGAA.
+</p>
+<h4 tabindex="-1" id="2.7.1">2.7.1. What is the RGAA?</h4>
+
+<p>The aim of the RGAA is to provide a framework for the accessibility of digital content.</p>
+
+<p>In its current version, it constitutes a reference system for verifying conformance with the WCAG 2.0 international standards. Its objective is to propose criteria and tests to verify that accessibility rules are respected.
+</p>
+<p>It does not constitute a new norm or standard, but provides a methodology and an operational framework for verifying the implementation of international standards of accessibility.
+</p>
+<h4 tabindex="-1" id="2.7.2">2.7.2. Who is affected by the obligation to conform?
+</h4>
+<p>The law of 2005 indicates that all online public communication services of the State, the local authorities and the public institutions that depend on it, are concerned.
+</p>
+<p>Any organization, public or private, undertaking an activity of general interest under the control of a public person is concerned.
+</p>
+<h4 tabindex="-1" id="2.7.3">2.7.3. What are the legally enforceable documents of the RGAA?
+</h4>
+<p>All RGAA documents are opposable, i.e. the Introduction to RGAA, the RGAA companion guide, and the Technical reference with its 6 parts.
+</p>
+<h4 tabindex="-1" id="2.7.4">2.7.4. What level of accessibility is legally required?
+</h4>
+<p>The level expected by law is double A (AA). Note that it is also the <a href="#ftn7" id="body-ftn7">level recommended by the European Parliament<sup aria-hidden="true">7</sup></a>.
+</p>
+<h4 tabindex="-1" id="2.7.5">2.7.5. What is the deadline for conformance?
+</h4>
+<p>Since May 2012, all sites and applications available from a Web browser must comply with the RGAA 2.2. An 18-month period is allowed to update to any new version of the RGAA as of its official publication.
+</p>
+<h4 tabindex="-1" id="2.7.6">2.7.6. In addition to the conformance of the site or the application, are there documents to be published to fulfill the legal obligation?
+</h4>
+<p><a href="#ftn8" id="body-ftn8">Two documents<sup aria-hidden="true">8</sup></a> are expected:
+</p>
+<ul><li>A help page for users, written in non-technical language, to inform them of the level of accessibility of the application or the contents, and help them to navigate. This help page must mention the contact details of a contact in the administration in case of difficulty, and provide the contact details of the Rights Defender. It must be accessible from all pages of the site;</li>
+<li>A conformance claim, intended for the administration, which indicates the precise level of conformance with the RGAA, and the declared and justified derogations.</li>
+</ul>
+<h4 tabindex="-1" id="2.7.7">2.7.7. What are the penalties for non-conformance?
+</h4>
+<p><a href="#ftn9" id="body-ftn9">Article 5 of the application decree<sup aria-hidden="true">9</sup></a> indicates that unless corrected within 6 months following a demand by the competent authority, the name of the service will be added on a list of non-conforming public communication services, published in electronic form by the Minister for Persons With Disabilities.
+</p>
+<p>Beyond this administrative sanction, any aggrieved user may request mediation from the Rights Defender, or compensation from the judge, depending on the nature of the damage suffered.
+</p>
+<h4 tabindex="-1" id="2.7.8">2.7.8. Who verifies that the legal obligation is respected?
+</h4>
+<p>Article 5 of the Decree states that it is up to the Minister in charge of Persons With Disabilities, or to the Prefect for decentralized services, the local authorities or the public institutions that depend on them, to ascertain the lack of conformance with the RGAA.
+</p>
+<p>However, each public entity is responsible for the accessibility of the published content. Any user who is prevented from accessing it can sollicitate the Rights Defender, or a judge, to request the respect of their rights.
+</p>
+<h4 tabindex="-1" id="2.7.9">2.7.9. What are the channels covered by the RGAA?
+</h4>
+<p>Accessibility concerns all broadcast channels (Web, radio, television, etc.). In its current version, it only deals with the accessibility of Web applications and content that can be consulted and operated through a Web browser.
+</p>
+<h4 tabindex="-1" id="2.7.10">2.7.10. Does the RGAA also cover mobile applications?
+</h4>
+<p>Sites and applications that can be viewed from a web browser on a smartphone are affected.
+</p>
+<p>On the other hand, although the criteria of the technical reference are applicable to many contents beyond web content, there is no test to cover mobile applications. The RGAA is indeed a transposition of the WCAG 2.0, which does not provide any technique specifically dedicated to mobile applications.</p>
+
+<p>Non-normative complementary resources to the RGAA will be made available to improve the accessibility of web content on mobile platforms.
+</p>
+<h4 tabindex="-1" id="2.7.11">2.7.11. Is the RGAA applicable to make computer workstations accessible?
+</h4>
+No, the technical reference in RGAA concerns only the applications and content available through a Web browser. These include web based applications, but not the native desktop applications.
+
+<h4 tabindex="-1" id="2.7.12">2.7.12. Does the RGAA impose technical solutions?
+</h4>
+<p>The normative part of WCAG, the success criteria, was designed to be independent of any technology to ensure compatibility of recommendations with current and future technologies. It is, at the same time, what ensures its durability, and what makes its use impractical from an  operational point of view.</p>
+
+<p>The criteria in the RGAA technical reference do not refer to a technology, but the associated tests explicitly aim at implementation techniques to verify that the criterion is met. The test work to verify compatibility with accessibility is thus partially supported by the reference document, which makes it very operational, but will require regular updates to integrate the new techniques that will emerge (see the mobile platforms).
+</p>
+<p>The criteria and tests of the RGAA technical reference system are normative. However, in the absence of updating the RGAA within 2 years to take account of new WCAG techniques made available by the W3C, it is allowed to create its own tests in addition to those existing, provided that it ensures compatibility with the criteria of the technical reference system and with the technologies mentioned in the reference baseline.
+</p>
+<h4 tabindex="-1" id="2.7.13">2.7.13. Is the RGAA comprehensive in its recommendations?
+</h4>
+<p>The RGAA offers a set of technical criteria to ensure the accessibility of Web applications and content. However, the evolution of the technologies and the associated software, does not allow to be totally exhaustive in the recommendations made. For this reason it will be updated regularly.
+</p>
+<h4 tabindex="-1" id="2.7.14">2.7.14. Is it allowed to use a technical standard other than the one recommended by the RGAA to verify conformance with WCAG 2.0?
+</h4>
+<p>The law requires conformance with international rules. In the event of a legal conflict, the RGAA technical reference will be used to verify conformance. It is important to understand that if the RGAA is fully compatible with WCAG 2.0, the reverse is not necessarily true.
+</p>
+<p>That said, the use of another reference is allowed, under three conditions:
+</p>
+<ul><li>Ensure that it is compatible with the RGAA technical reference;</li>
+<li>Provide an explicit correspondence table between the criteria and tests of the alternative reference, and those of the current RGAA technical standard;</li>
+<li>Provide a conformance claim based on the RGAA technical standard.</li>
+</ul>
+<h4 tabindex="-1" id="2.7.15">2.7.15. What are the costs of conforming to accessibility standards for a digital system?
+</h4>
+<p>In general, when the accessibility is taken into account upstream, the cost is transparent, the time spent being smoothed in the various tasks inherent to the project. This general case is to be nuanced when the site proposes specific contents requiring special adaptations (videos, numerous downloadable documents with no control over their production).</p>
+
+<p>However, the highest costs are incurred when accessibility has never been taken into account. In this case, the approach to accessibility may require an effort and represent a cost that is sometimes not negligible, extremely dependent on the context.
+</p>
+<ol>
+    <li>Training and communication: Depending on the initial level of the developers, graphic designers and editors, as well as the nature of the production tools used, it is sometimes necessary to raise  awareness and take training actions enabling all the actors involved to know the basics of accessibility. It should be noted that Article 6 of the implementing decree of the RGAA stipulates that public services must include theoretical and practical training on accessibility and conformance to international standards, as per the continuing education of their staff involved in online public communication services.  It is also necessary to ensure that all internal and external actors are informed of the requirements and principles of digital accessibility;</li>
+<li>Advice and assistance: conformance with the rules of accessibility very often requires arbitration. This expertise may also be necessary for the production of specifications or their operation. These arbitrations are usually carried out on a case-by-case basis and may involve internal or external expertise;</li>
+<li>Development time and conformance: rehauling existing pages for conformance can be a major burden. Even if it is more rare, the initial development time of accessible pages can also represent an additional cost compared to the development of the same pages without any specific accessibility concerns. Although this is not the most frequent case, this step may require the production of content specifically dedicated to accessibility, especially for videos (captioning, transcription or audiodescription, for example);</li>
+<li>Tests, audit, monitoring: the contents of large-scale sites are very frequently updated. New pages are regularly published and the content of the existing pages is regularly modified. Each change can foster new errors. It is therefore necessary to introduce, into the production and maintenance process, testing or validation of the produced or updated contents, which may represent an additional cost; or be integrated into the continuous delivery testing process if it exists;</li>
+<li>Conformance claim: the entity responsible for the site must provide for a conformance claim, in accordance with the provisions of the decree implementing the Equal Opportunities Act of February 2005. This implies that an audit has been carried out, preferably by an independent expert, who may be part of the administration, or of a third party private company.</li>
+</ol>
+<h2 tabindex="-1" id="3">3. Part 1: Accessibility framework: the context, approach and evolution of the RGAA</h2>
+
+<h3 tabindex="-1" id="3.1">3.1. Context and environment
+</h3>
+<h4 tabindex="-1" id="3.1.1">3.1.1. The stakes
+</h4>
+<h5>3.1.1.1. The diversity of audiences
+</h5>
+<p>The issue of the number of people with disabilities is often debated, not just in France. It is very difficult to know precisely, in figures, how many people are handicapped. Relying on official statistics implies not identify the persons who have an administrative procedure for recognition of their disability, which is very simplistic.</p>
+
+<p>An <a href="#ftn10" id="body-ftn10">INSEE survey<sup aria-hidden="true">10</sup></a> indicates that people with disabilities represent 10 to 20% of the population. What seems confirmed by the World Report on Disability<sup aria-hidden="true">11</sup> published by WHO in 2010 and are approximately 15% of the world population with disabilities. And the number of seniors likely to lose certain abilities with age is increasing.</p>
+
+<p>Law &#8470; 2005-102 of February 11, 2005 for equal rights and opportunities, participation and citizenship of people with disabilities, made accessibility a requirement for all public communication services online state , The local authorities and the public institutions that depend on them.
+</p>
+<p>If the Internet and Web resources are not accessible to people with disabilities and the elderly, this constitutes an additional factor of exclusion which can aggravate a situation of disability or situations of fragility.</p>
+
+<p>Many users may have to operate in contexts very different from the average user:</p>
+
+<ul><li>They may not be able to see, hear, move;</li>
+<li>They may have difficulty reading or understanding textual content;</li>
+<li>They may not be able to use a keyboard or a mouse;</li>
+<li>They may be subject to epileptic seizures triggered by animations;</li>
+<li>They may be unable to perform tasks in a time limit or be disturbed by a changing environment they do not control.</li>
+</ul>
+<p>Note that the Web accessibility guidelines aim to make a single interface accessible to everyone regardless of their abilities, avoiding the proliferation of media, in a spirit of universal design.</p>
+
+<p>However, the inclusion of intellectual disabilities often requires to provide an alternative text version to simplify, according to the <a href="#ftn12" id="body-ftn12">"Easy To Read and Understand" method<sup aria-hidden="true">12</sup></a>.
+</p>
+<p>The inclusion of intellectual disability consists in aiming for simplicity both in substance and in form, which can be very useful to all users:
+</p>
+<ul>
+    <li>Write textual content in simple language, using short sentences, simple words, explicit acronyms;</li>
+<li>Illustrate the contents with concrete examples, explicit visual elements related to the subject;
+</li>
+<li>Structure pages and text in a logical and chronological order;
+</li>
+<li>Favor legibility and clarity over graphic effects;
+</li>
+<li>Use a clear, clean layout that emphasizes the essential information.</li>
+</ul>
+<p>To go beyond the legal obligation (double A), and ensure true accessibility of textual information, it is recommended to refer to the European method "Easy to read and understand", which gathers guidelines for copywriting and presenting information suitable for persons with intellectual disabilities.
+</p>
+<h5>3.1.1.2. The diversity of technologies
+</h5>
+<p>Beyond human capacities, the acceleration of technical evolutions has led to a growing diversity of technologies allowing access to the Web. The users can thus be equipped very differently:</p>
+<ul>
+<li>They can have a desktop computer with the latest operating system, browser and assistive technology, or older versions;
+</li>
+<li>They can surf the Web from a smartphone, tablet or laptop or desktop, with operating systems and browsers of a broad variety;
+</li>
+<li>They can have a screen displaying only text, a reduced number of colors, of small size or with a particular resolution;
+</li>
+<li>They may have an older version of a browser or player, a software entirely different from the one on which the tests were performed, or an operating system different from those most commonly used;
+</li>
+<li>They may connect with mobile devices and access online services with a low bandwidth connection, or with small screens.</li>
+</ul>
+
+<h5>3.1.1.3. Content adaptation
+</h5>
+<p>As stated by the four main principles defined in the international rules for the accessibility of web content, the adaptation of Web content consists in making the contents perceivable, operable, understandable, and robust:</p>
+<ul>
+<li>Either by providing the contents in forms that are usable in certain contexts: the captioning of a film for a hearing impaired person, a sound file describing the texts displayed in the video for a visually impaired person&hellip;</li>
+<li>Either by assistive technologies enabling the content to be delivered in a perceivable form by the user (example: screen reading and speech synthesis software).</li>
+</ul>
+<p>Very often, it is the combination of these two types of solutions that will give users an access to the content.</p>
+<p>
+Following the Web development norms and standards published by the W3C (World Wide Web Consortium), and ensuring technical conformance of Web pages can greatly facilitate access to most content for everyone, including persons with disabilities and able-bodied persons browsing the Web in a variety of contexts.</p>
+
+<p>In many cases, however, technical conformance will be largely insufficient. This is particularly the case when, by nature, the content can not be perceived by some people. In this case, it will be necessary to provide substitution content, also called alternative content or more simply "alternative".
+</p>
+<p>Example of text equivalents for images: a visually impaired person will, for example, use a software called a screen reader which, coupled with a speech synthesis or a braille display, will retrieve the available information. However, whereas text can be processed by assistive technologies and rendered to the user, this is not the case for images. It is therefore necessary to provide an alternative text to  people who can not perceive the information conveyed by the image, when it is not available in its context. This solution, which makes sense only when the image actually conveys information, is one of the elements necessary, for a page with meaningful images, to be accessible.</p>
+
+<p>In addition to the benefit to screen reader users, these alternatives are also necessary for some people with motor disabilities. An image without a textual alternative will prevent a voice dictation software from locating this image, since it relies on the textual alternative to identify them. Consequently, a person with a motor impairment, who can not use a keyboard nor a mouse, will not be able to activate an image-link with no textual equivalent.</p>
+<p>
+Note that text equivalents can also help indexing pages of a site, since search robots can use this text when they reference these pages.</p>
+
+<h4 tabindex="-1" id="3.1.2">3.1.2. e-Government
+</h4>
+<p>The development of e-government has profoundly changed relations between users, public agents and administrative authorities.</p>
+
+<p>In order to ensure access to the services and information allowed by this development, the administrative authorities must offer web content accessible to every citizen, regardless of their abilities. This environment must also ensure the following:</p>
+<ul>
+<li>Secure access to information and services;
+</li>
+<li>Ensure compatibility with assistive technologies used by people with disabilities (screen readers, on-screen keyboards, trackballs&hellip;)</li>
+<li>Propose alternative solutions for content that is not, or hardly, perceivable.</li>
+</ul>
+<p>All these elements contribute to solutions that are required by the development of e-government, within administrations, between administrations and businesses, and between administrations and citizens.
+</p>
+<p>To ensure maximum accessibility to web applications and content, it is necessary to adhere to a set of rules and to ensure that the implementation of these rules works effectively on the technologies used by end users, whether they have disabilities or not. The RGAA has been developed to address this concern.
+</p>
+<h4 tabindex="-1" id="3.1.3">3.1.3. The legislative framework
+</h4>
+<h5>3.1.3.1. The premises
+</h5>
+<p>Since 1999, France has taken action to promote the accessibility of information to all users on the basis of accessibility guidelines of the "Web Accessibility Initiative" (WAI), started by the W3C.
+</p>
+
+<p>A circular from the Prime Minister, dated October 7, 1999, about the websites of State services and public establishments, states:
+</p>
+<blockquote><p>
+Site managers will pay particular attention to favor the accessibility of information to all Internet users, including people with disabilities, blind, visually impaired or hard of hearing.
+</p>
+</blockquote>
+<p>The initial awareness-raising actions, of an incentive and exemplary nature, were accompanied by reference documents of best practices intended for the administrations.
+</p>
+<h5>3.1.3.2. The international and European context
+</h5>
+<p>France's actions took place in an international context redefining new rights for people with disabilities, with accessibility being raised up to the level of human rights.
+</p>
+<p>The United Nations has adopted the <a href="#ftn13" id="body-ftn13">Convention on the Rights of Persons with Disabilities<sup aria-hidden="true">13</sup></a> (CRPD) on December 13, 2006, <a href="#ftn14" id="body-ftn14">ratified by France on February 18, 2010<sup aria-hidden="true">14</sup></a>.
+</p>
+<p>The CRPD, in its Article 2, defines in particular the <a href="#ftn15" id="body-ftn15">discrimination based on disability<sup aria-hidden="true">15</sup></a> as resulting not only from a deliberate action of exclusion, but also from a denial of reasonable accommodation.
+</p>
+<p>Article 9 of the CRPD specifically targets the digital world, indicating that States Parties must take <q>measures, which shall include the identification and elimination of obstacles and barriers to accessibility</q> and that these measures <q>shall apply to, inter alia:
+(&hellip;) Information, communications and other services, including electronic services and emergency services</q>.
+</p>
+<p>At the same time, the European Union has drawn up action plans to strengthen the inclusion of disability in the European digital landscape. With the "eEurope 2002 Plan" confirmed by the "eEurope 2005 Plan", the European Commission has integrated the accessibility of the disabled and the elderly to the information society as a priority of its action.
+</p>
+<p>The <a href="#ftn16" id="body-ftn16">Action 64<sup aria-hidden="true">16</sup></a> of the Digital Agenda for Europe 2020 aims to ensure the accessibility of public sector websites in 2015. The European Commission has adopted on December 3, 2012 a proposal for a directive on the accessibility of Web sites of the public sector, which prefigures and completes a directive, the <a href="#ftn17" id="body-ftn17">European Accessibility Act<sup aria-hidden="true">17</sup></a>, in preparation by the European Commission.
+</p>
+<h5>3.1.3.3. The 2004 reference framework
+</h5>
+<p>In February 2004, the Agency for the Development of e-Government (Adaé) attached to the services of the Prime Minister, develops and publishes the "Accessibility reference of Internet services for the administration", based on criteria defined to assess the accessibility of a website according to the WCAG 1.0 issued by the WAI.
+</p>
+<p>This reference framework of best practices for administrations, of an incentive and exemplary nature, helped to accompany the first actions towards awareness. This framework defined accessibility levels derived from the WCAG 1.0 standards, which are not included in the RGAA.
+</p>
+<h5>3.1.3.4. The Law of February 2005 and its application
+</h5>
+<p>The regulation was enforced in February 2005. Law &#8470; 2005-102 of February 11, 2005 "for the equality of rights and opportunities, participation and citizenship of persons with disabilities", stated, as per its Article 47, the obligation for public on-line communication by the State's services, local and regional authorities and the public institutions which depend on them, to be accessible to persons with disabilities.</p>
+
+<p>The decree taken in application of the Article 47 was published in May 2009. This decree specifies through 7 articles the general terms and conditions of application for these three channels: Web, television and phone communications. It makes it possible to introduce the <span lang="fr">Référentiel Général d'Accessibilité pour les Administrations</span> (RGAA, General Accessibility Framework for Administrations), to define the technical modalities.
+</p>
+<p>Finally, the <a href="#ftn18" id="body-ftn18">Ministerial Decree of October 21, 2009<sup aria-hidden="true">18</sup></a> on the RGAA completes the legislative framework.
+</p>
+<h5>3.1.3.5. The update of the RGAA in 2014
+</h5>
+<p>Five years after the publication of the RGAA, the State takes account of the technological evolutions and takes the necessary steps to update the RGAA. A new ruling is adopted, setting version 3 of the RGAA as the applicable one.
+</p>
+<h3 tabindex="-1" id="3.2">3.2. Development approach
+</h3>
+<h4 tabindex="-1" id="3.2.1">3.2.1. Approach and orientation
+</h4>
+<p>The approach adopted is to promote the development of digital accessibility by setting up a clear, practical, operational and pragmatic framework.
+</p>
+<p>The RGAA is made available to the public in electronic form. It cancels and replaces the 2004 "Accessibility reference of Internet services for the administration".
+</p>
+<p>The approach adopted for the development of the RGAA is based on the following principles:
+</p>
+<ul>
+<li>The document must be usable in different contexts (management, deployment, training, project management, development, audit&hellip;). Non-normative resources will be made available to facilitate its understanding;</li>
+<li>The document relies as strictly as possible on the international standard WCAG 2.0 and its various deployment documents;
+</li>
+<li>The RGAA covers all administrative authorities, i.e. local authorities, public bodies and State services. Therefore, the level of requirement reflected in the RGAA sucess criteria must be adapted to all administrative authorities.</li>
+</ul>
+<h4 tabindex="-1" id="3.2.2">3.2.2. Evolution of the RGAA to version 3
+</h4>
+<p>Version 1.0 of the RGAA was based on the applicable international recommendations at the time it was developed, namely the WCAG 1.0. Version 2 of the RGAA did not question the foundations of the first version, but constituted an evolution, in order to align it with the international standards that had evolved.</p>
+
+<p>Version 3 of the RGAA is a methodological revision as well as a technical update, to take into account the evolutions of HTML. It is based on an adapted copy of the AccessiWeb reference list issued by the BrailleNet association.
+</p>
+<h4 tabindex="-1" id="3.2.3">3.2.3. Revision of the RGAA documents
+</h4>
+<p>The emergence and evolution of new technologies, and the development issues associated with new platforms, such as in the mobile world, have profoundly changed the way websites are developed. This has necessitated the development of a new reference framework (RGAA 3) adapted to new technologies such as HTML5 or WAI-ARIA.
+</p>
+<p>This has led to a revision of the various documents.</p>
+
+<h5>3.2.3.1. Introduction to the RGAA
+</h5>
+<p>To avoid confusion between the various documents, some have been renamed. This is the case of the document previously titled "RGAA", now titled "Introduction to the RGAA".</p>
+
+<p>The objective of the document is unchanged, although some modifications have been made to take into account the latest data available on disability and to introduce the latest version of the reference framework.
+</p>
+<h5>3.2.3.2. Companion guide
+</h5>
+<p>The Companion guide has benefited from an update of legal references and disability data, and a clarification of certain aspects, whether in the questions &amp; answers section, with the addition of some questions from the field, or the drafting of a new section on responsibilities.
+</p>
+<p>In addition, the companion guide proposed non-normative resources. They have been extracted from the guide, which is part of the RGAA, so as not to confuse what is a legal obligation and what is proposed only as an indication, and which can be taken up and updated in a separate "resources" section of the RGAA itself.
+</p>
+<h5>3.2.3.3. Technical reference
+</h5>
+<p>This is the part that has undergone the most important changes. Appendices 1, 2 and 3 of the RGAA 2.2 have been cancelled and replaced in the RGAA 3 by the technical reference.
+</p>
+<p>Below are briefly listed the main differences between RGAA 2.2 and  RGAA 3.
+</p>
+<h6>3.2.3.3.1. Main differences with RGAA 2.2
+</h6>
+<p>RGAA 3 is based on the HTML5/ARIA AccessiWeb reference. RGAA 3 has 13 categories against 12 previously:</p>
+
+<ol>
+<li>Images</li>
+<li>Frames</li>
+<li>Colors</li>
+<li>Multimedia</li>
+<li>Tables</li>
+<li>Links</li>
+<li>Scripts</li>
+<li>Mandatory elements</li>
+<li>Information structure</li>
+<li>Presentation of information</li>
+<li>Forms</li>
+<li>Navigation</li>
+<li>Consultation</li>
+</ol>
+<p>There are some differences in the title of the categories:
+</p>
+<ul>
+<li>The "Standards" category in the RGAA 2.2 is now called "Mandatory elements";</li>
+<li>The old category "Texts" disappears;</li>
+<li>Two new categories appear: "Links" and "Consultation".</li>
+</ul>
+<p>The distribution of criteria within certain categories also changes:
+</p>
+<ul>
+<li>The criteria of the "Navigation" category are now spread into two categories: "Links" and "Navigation";
+</li>
+<li>The criteria for the "Texts" category are now spread into "Mandatory elements" and "Consultation".</li>
+</ul>
+<p>This does not change the scope of the reference: RGAA 3 covers all 12 categories of RGAA 2.2 and continues to rely on WCAG 2.0, as an operational conformance verification methodology.</p>
+
+<h6>3.2.3.3.2. Implementation of new HTML5 elements and attributes
+</h6>
+<p>In the absence of WCAG techniques to take HTML5 into account, the HTML5 specification itself served as a reference, after ensuring the compatibility of these new elements with accessibility.</p>
+
+<p>RGAA 3 covers the whole HTML5 language and proposes specific criteria and tests to support this new language in an accessible way.</p>
+
+<h6>3.2.3.3.3. Abandoning the requirement for a systematic alternative to JavaScript
+</h6>
+<p>JavaScript is a language based on the ECMA standard, an open standard being an integral part of HTML5/ARIA, of which it controls the APIs in particular. In this context, requiring systematic alternatives to JavaScript would be counterproductive.
+</p>
+<h6>3.2.3.3.4. Implementation of the WAI-ARIA API
+</h6>
+<p>The WAI-ARIA API can make JavaScript-based features or components accessible via roles, states and properties. The WAI-ARIA API is supported by all browsers since Internet Explorer 8 and the main assistive technologies.</p>
+
+<p>An important part of the API describes design patterns that help developers design new  components like modal windows (role <code>dialog</code> or <code>alertdialog</code>) or tab systems (role <code>tabpanel</code>) that are perfectly accessible.
+</p>
+<p>RGAA 3 supports the API itself and the associated design patterns, specifically:
+</p>
+<ul>
+<li>Consistent use of WAI-ARIA roles is checked, to avoid certain roles on particular items;
+</li>
+<li>Components developed with JavaScript and matching a design pattern (for example, a modal window or a tab system) must respect the design pattern as defined by the API, and implement the corresponding keyboard behavior;</li>
+<li>The rendering of JavaScript components using WAI-ARIA must be tested on combinations of assistive technologies, browsers and operating systems (baseline).</li>
+</ul>
+<h6>3.2.3.3.5. Removing requirements for HTML elements and attributes that have become obsolete in HTML5
+</h6>
+<p>This is the case for example of the <code>summary</code> attribute for data tables.
+</p>
+<h4 tabindex="-1" id="3.2.4">3.2.4. Governance of the update process
+</h4>
+<p>Like the first version of the RGAA, the document was submitted to a representative sample of accessibility experts. In addition to this consultation, the Interministerial Directorate of the Digital Information and Communication System of the State (DInSIC) has extended the consultation by successive stages in order to facilitate the development and update of the RGAA 3:</p>
+<ul>
+<li>Creation of a modified version of the HTML5/ARIA AccessiWeb reference, on which the update of the RGAA 3 technical document is based;
+</li>
+<li>On the basis of this modified and annotated copy, consultation of a restricted and formed working group, whose members come from different entities in charge of the management and production of public Web sites and applications. This consultation made it possible to define and validate the technical basis of the RGAA 3;
+</li>
+<li>Call for comments from a broader group of experts composed of the AccessiWeb working group, on a list of specific questions that illustrate the technical and managerial guidance of the RGAA 3 and makes it possible to refine the technical document. Held from July 7 to 15, 2014;</li>
+<li>Call for public comments on a beta version of the RGAA 3 with its companion documents, from September 1 to 30, 2014.</li>
+</ul>
+<h3 tabindex="-1" id="3.3">3.3. Modalities of the document
+</h3>
+<h4 tabindex="-1" id="3.3.1">3.3.1. Evolution of the document
+</h4>
+<p>The conditions for the preparation, approval, modification and publication of the RGAA are set by decree.</p>
+
+<p>These include:
+</p>
+<ul>
+    <li>Publication on a public website so that it can be consulted by all.</li>
+<li>Their regular update, in order to take into account the evolutions of technologies, and of the uses by the administrative authorities subject to the application of the law of February 11, 2005.</li>
+</ul>
+<p>Its updating is carried out by the services of the Minister in charge of the persons with disabilities, in liaison with the services of the Minister for the Development of the digital economy.</p>
+
+<p>The update frequency of the RGAA will depend on such factors as:</p>
+<ul>
+<li>Technological developments;</li>
+<li>Evolutions of norms or standards;</li>
+<li>Legislative and legal developments;</li>
+<li>State policy on disability.</li>
+</ul>
+<p>The criteria and tests of the RGAA technical reference system are normative. However, in the absence of update of the RGAA within 2 years to take into account new WCAG techniques made available by the W3C, it is allowed to create its own tests in addition to those existing under the conditions defined below.</p>
+
+<h5>3.3.1.1. Management of tests created outside of the RGAA in the absence of an update
+</h5>
+<h6>3.3.1.1.1. Conditions for creating tests not covered by the RGAA
+</h6>
+<p>There are three conditions for the creation of new tests not defined by the applicable version of the RGAA:</p>
+<ul>
+<li>The lack of updating of the RGAA, whereas the WCAG techniques have been updated, leads to problems with the application of the standard;
+</li>
+<li>The WCAG update has been in place for at least 2 years without updating the RGAA;
+</li>
+<li>The new tests created must ensure compatibility with the criteria of the RGAA technical reference and with the technologies mentioned in the reference baseline.</li>
+</ul>
+<h6>3.3.1.1.2. Traceability and documentation of tests created outside the RGAA
+</h6>
+<p>Any new test should be referenced in a dedicated section titled "Tests created outside of the RGAA framework", in the conformance claim. This section should list the new tests created, the RGAA criteria to which they relate, and the correspondence with WCAG success criteria and techniques (with a link to these techniques).</p>
+
+<p>The date of creation of these tests must also be mentioned.</p>
+
+<h6>3.3.1.1.3. Priority to the official interpretation of the RGAA
+</h6>
+<p>Let's consider the case where, in the absence of an RGAA update since at least 2 years, new tests would have been created to support new WCAG techniques; and a new version of the RGAA that supports these updates is pulblished a few months later.</p>
+<p>
+As these new tests are no longer justified, they will have to be removed from future audits. And it is indeed the interpretation of the official version of the RGAA that should take precedence over any test created outside this framework, when the techniques are supported.
+</p>
+<h4 tabindex="-1" id="3.3.2">3.3.2. Property and liability
+</h4>
+<p>The RGAA and its content are property of the State of France. It is edited by the services of the Minister responsible for the reform of the State, who must respect the conditions for the preparation, approval, modification and publication of the RGAA set by decree.</p>
+
+<p>These include:
+</p>
+<ul>
+    <li>Publication on a public website so that it can be consulted by all. Currently, the official version of RGAA and its accompanying documents are available at the following address: <a hreflang="fr" href="http://references.modernisation.gouv.fr/rgaa-accessibilite/">http://references.modernisation.gouv.fr/rgaa-accessibilite/</a>;</li>
+<li>Their regular update, in order to take into account the evolutions of technologies, and of the uses by the administrative authorities subject to the application of the  February 11, 2005 law.</li>
+</ul>
+<p>Like all documents available on references.modernisation.gouv.fr the RGAA is available under <a href="#ftn19" id="body-ftn19">open licence 1.0<sup aria-hidden="true">19</sup></a>. You are free to:</p>
+<ul>
+<li>Reproduce, copy, publish and transmit this information;</li>
+<li>Disseminate and redistribute this information;</li>
+<li>Adapt, modify, transform and extract from this information, for instance to build upon it in order to create "Derivative information";</li>
+<li>TExploit this information commercially, for example, by combining it with other information, or by including it in your own product or application.</li>
+</ul>
+<p>These freedoms are subject to acknowledging the authorship of the original information: its source and the date of its latest update. The re-user may in particular fulfil this condition by providing one or more hypertext links (URLs) referring to this present site and effectively acknowledging its source.</p>
+
+<p>This attribution shall not suggest any official status or endorsement, by the "Producer"
+or any other public entity, of the "Re-user" or the re-use of the information.</p>
+
+<h2 tabindex="-1" id="4">4. Part 2: Application guide for the RGAA
+</h2>
+<h3 tabindex="-1" id="4.1">4.1. Scope  of the RGAA
+</h3>
+<h4 tabindex="-1" id="4.1.1">4.1.1. Services concerned
+</h4>
+<p>The services concerned by the RGAA are the State services, local authorities, agencies, public establishments, public businesses and private entities with a public service mission.
+</p>
+<p>The RGAA covers business applications for public servants, as well as Internet sites, Intranet sites, and Web applications, for the general public and public servants.</p>
+
+<h4 tabindex="-1" id="4.1.2">4.1.2. Contents concerned
+</h4>
+<p>As defined in Article 47 of Law &#8470; 2005-102 of February 11, 2005, any type of information in digital form is concerned by the legal obligation form, regardless of the means of access, the content and the method of consultation.</p>
+
+<p>More precisely, all documents or applications available through a Web browser are concerned: Internet and Intranet sites (the latter being common office tools for employees with disabilities who must have access to all the information necessary for the fulfillment of their missions), and Web applications. The term "Web-based application" refers to any business application that is accessed through a web browser and that targets all or part of the agents of a ministry, or the general public (example: exam registration, leave management software , tax declaration&hellip;).</p>
+
+<h5>4.1.2.1. Case of content published on external sites
+</h5>
+<p>Content published on external websites result from the project management's will to reach the public via these sites. They are therefore subject to the obligation of accessibility. If publishing on these sites makes the contents inaccessible, the content provider will be held responsible for it.
+</p>
+<p>Example: A ministry that puts its videos on Daily Motion or Youtube, must at least create a link to accessible alternative textual content, according to the principle of compensation. Same thing for content published over social networks. On the other hand, information published by a civil servant of a ministry, and describing their activities, should not be considered as online public communication  (on social media for example).</p>
+
+<h5>4.1.2.2. Cases of links to downloadable documents published on other sites
+</h5>
+<p>Providing external links to downloadable documents may be justified by the need to provide additional information about the content. In this case, responsibility rests with the provider of content published on the external site. This is an authorized derogation case described in the "<a href="#4.2.6">List of permitted derogations and principle of compensation</a>" section.</p>
+
+<h3 tabindex="-1" id="4.2">4.2. Application of the RGAA
+</h3>
+<p>The goal of the RGAA is to provide, for managers of public communication services, implementing an accessibility approach or creating a new on-line service, the means to do so under the best possible conditions. The requirement for digital accessibility must be included in the tender specifications. It is recommended that the necessary resources be made available to the departments concerned.</p>
+
+<p>The appropriation of the RGAA can only happen with a voluntarist approach to the evolution of the accessibility of each public communication service online. It is based on a self-assessment procedure (or third-party evaluation, depending on the available skills) and an accessibility approach adapted to the type of project (creation of new Web content, redesign of an existing site, continuous improvement, sampling).</p>
+
+<h4 tabindex="-1" id="4.2.1">4.2.1. Levels of conformance with accessibility standards
+</h4>
+<p>The English translation of WCAG 2.0 indicates:</p>
+
+<blockquote><p>In order to meet the needs of different groups and different situations, three levels of conformance are defined: A (lowest), AA, and AAA (highest) (<a href="#ftn20" id="body-ftn20">source<sup aria-hidden="true">20</sup></a>).
+</p></blockquote>
+
+<p>The RGAA success criteria were therefore associated with one of the  A, AA and AAA levels, based on various factors (<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-levels-head">list of assignment factors for WCAG levels</a>).</p>
+
+<p>Besides, the AAA level is of peculiar nature, as it does not apply to all content or in all contexts:</p>
+
+<blockquote><p>It is not recommended that Level AAA conformance be required as a general policy for entire sites because it is not possible to satisfy all Level AAA Success Criteria for some content (<a href="#ftn21" id="body-ftn21">source<sup aria-hidden="true">21</sup></a>).</p>
+</blockquote>
+
+<p>The <a href="#ftn22" id="body-ftn22">level recommended by the European Union is double A (AA)<sup aria-hidden="true">22</sup></a>. This is also the level expected for sites targeted by the RGAA and, as such, to conform to RGAA, it is necessary to validate all the criteria of levels A and AA, as per the WCAG. Success criteria associated with the AAA level may be considered in some contexts, where possible and relevant.</p>
+<table>
+<caption>WCAG conformance levels:</caption>
+<tr>
+<th scope="col" style="width:15%;">Level</th>  <th scope="col" style="width:50%;"> Definition of conformance</th><th scope="col">    Criteria</th>
+</tr>
+<tr><td>A</td><td>For Level A conformance (the minimum level of conformance), the Web page satisfies all the Level A Success Criteria, or a conforming alternate version is provided.</td><td> Essential success criteria that can reasonably be applied to all Web resources.</td>
+</tr>
+<tr><td>AA</td><td>For Level AA conformance, the Web page satisfies all the Level A and Level AA Success Criteria, or a Level AA conforming alternate version is provided.</td><td>Success criteria  that can reasonably be applied to all Web resources.</td></tr>
+<tr><td>AAA</td><td>For Level AAA conformance, the Web page satisfies all the Level A, Level AA and Level AAA Success Criteria, or a Level AAA conforming alternate version is provided.</td><td>    Success criteria not applicable to all Web resources.</td>
+</tr>
+</table>
+
+<h4 tabindex="-1" id="4.2.2">4.2.2. Accessibility approach
+</h4>
+<p>The objective of the RGAA is to accompany accessibility approaches by defining the technical criteria that must be implemented, and the corresponding tests. Depending on the project, the accessibility objectives and the different phases of the project, the RGAA should serve as a reference by answering the accessibility-related questions that arise in different contexts.</p>
+
+<p>In particular, the RGAA may be used in the following contexts:</p>
+<ul>
+<li>Implementation of a new site (redesign): This approach consists in taking into account the recommendations of the RGAA from the beginning to the end of the site creatin project (analysis, production, publication, maintenance, lifecycle).
+</li>
+<li>Improvement of an existing site, and completion of the conformance claim: this approach consists in evaluating the accessibility of a site already in production, in order to extract indicators, overall results, operational recommendations, and tests results for the site and its pages.
+</li>
+</ul>
+<p>Concretely, an approach that takes account of accessibility requires clear commitments. Inspired by the <a href="#ftn23" id="body-ftn23">ISO 9001:2008<sup aria-hidden="true">23</sup></a>, here are some elements needed for a successful and sustainable accessibility approach.
+</p>
+<h5>4.2.2.1. Management commitment
+</h5>
+<p>The management of the public entity, i.e. persons with sufficient responsibility for carrying out the following actions, must:</p>
+<ul>
+<li>Communicate within the organization the importance to take into account accessibility rules, in order to fulfill its public service mission in the general interest, and to satisfy regulatory and legal requirements;</li>
+<li>Establish an accessibility policy;</li>
+<li>Ensure conformance objectives are established;</li>
+<li>Monitor indicators on the level of accessibility;</li>
+<li>Ensure availability of resources.</li>
+</ul>
+<h5>4.2.2.2. Training Obligation
+</h5>
+<p>Digital accessibility is a technical field that requires training.
+</p>
+<p>Article 6 of the Decree of May 14, 2009 states:</p>
+<blockquote>
+<p>
+The State, territorial collectivities and the public institutions which depend on them, include theoretical and practical training on accessibility for persons with disabilities, and conformance to international standards in this area, as per the continuing education of their staff involved in online public communication services.  
+</p>
+</blockquote>
+<p>Without precise training, adapted to their professional profile, accessibility can not be implemented by the civil servants involved.</p>
+
+<h5>4.2.2.3. Designation of an accessibility lead
+</h5>
+<p>Management must appoint a member of the organization's management as an "accessibility lead". This person, notwithstanding other responsibilities, must have the responsibility and authority, in particular, to:</p>
+<ul>
+<li>Ensure that the processes necessary to take account of accessibility are defined, implemented and maintained;</li>
+<li>Report to management on the level of accessibility and any need for improvement;</li>
+<li>Ensure that awareness of accessibility requirements throughout the organization is encouraged;</li>
+<li>Be the single entry point on issues of digital accessibility.</li>
+</ul>
+<h5>4.2.2.4. Regular accessibility audits
+</h5>
+<p>Only an audit on a representative sample of pages can help determine the level of conformance of the site or application to the RGAA.</p>
+
+<p>This audit is conducted under the responsibility of the "accessibility lead" of the public entity, and must comply with the following points:</p>
+<ul>
+<li>It is performed on at least part of the perimeter of the site, and on a representative sample of <strong>the whole information system</strong>, at intervals to define;</li>
+<li>It is up to the entity to ensure the reliability of its declaration by any means (resort to an external service provider, training of internal experts, cross-audits&hellip;);</li>
+<li>It aims to produce a conformance score for the single A and double A (AA) levels of the RGAA, on a representative sample of web pages;</li>
+<li>The result must be reported to the management at least.</li>
+</ul>
+<h4 tabindex="-1" id="4.2.3">4.2.3. Requirement for reasonable accommodation</h4>
+
+<p>The United Nations Convention on the Rights of Persons with Disabilities (CRPD), at the same time as it recognizes accessibility as a human right and creates a duty to include persons with disabilities, states that such action must consist of "Reasonable accommodation".</p>
+
+<p>The concept is defined in section 2 of the CRPD as follows:</p>
+
+<blockquote><p>"Reasonable accommodation" means necessary and appropriate modification and adjustments not imposing a disproportionate or undue burden, where needed in a particular case, to ensure to persons with disabilities the enjoyment or exercise on an equal basis with others of all human rights and fundamental freedoms;</p>
+</blockquote>
+<p>The WCAG 2.0 standards are recommendations that are legally binding in France. They contain in particular a number of very precise technical rules which can be deployed easily and even sometimes be tested automatically. Note, however, that <a href="#ftn24" id="body-ftn24">only 20% of accessibility criteria seem to be prone to a fully automatic verification<sup aria-hidden="true">24</sup></a>.</p>
+
+<p>Many criteria therefore require to be checked manually by a trained person, especially when it comes to criteria relative to relevance. It is important to understand this notion of relevance, which must not be interpreted in the sense of optimization, but in the sense of access to information, which is a criterion that can be evaluated objectively. Thus, the quality of the alternatives should not be assessed by the auditor, who should merely check whether access to information is possible.
+</p>
+<p>Both types of recommendations (those that can be verified automatically and those that require manual testing) must be deployed on all pages of a site.
+</p>
+<p>In practice, it is difficult and extremely time-consuming to test all content for all WCAG 2.0 rules. The desire to make a site fully accessible on all its pages and for all the criteria can incur huge efforts, which can be counterproductive.</p>
+
+<p>It will therefore be necessary to:</p>
+<ul>
+<li>Set limits: analyze a sample of representative pages and not the entire site;
+</li>
+<li>Make choices: to determine which essential contents and functionalities of the site or the application that must be made accessible, and to decide in which case an improvement turns out to be too difficult or counterproductive;</li>
+<li>To plan operations so as to make accessibility a continuous improvement process.</li>
+</ul>
+<p>The first basic expectation of users is to be able to access the contents and functionality of public sites, but not necessarily in the same form. Setting up alternatives can be an acceptable compromise, as long as they provide the same level of information and equivalent functionality.</p>
+
+<h4 tabindex="-1" id="4.2.4">4.2.4. The notion of "baseline"
+</h4>
+<p>With <a href="#ftn25" id="body-ftn25">the technological leap made in recent years<sup aria-hidden="true">25</sup></a>, it is not possible to provide a single version of a service both for modern technologies (supporting the latest technical developments and most broadly used), and for <a href="#ftn26" id="body-ftn26">technologies now considered obsolete<sup aria-hidden="true">26</sup></a>.</p>
+
+<p>Accessibility consists in respecting a <a href="#ftn27" id="body-ftn27">reasonable accommodation obligation<sup aria-hidden="true">27</sup></a>, and maintaining multiple versions of the same interface is not feasible in practice, because excessively complex and costly to maintain.</p>
+
+<p>In parallel with the administrations commitment to standards for their online contents and services, it is necessary for users to update their browser and their assistive technology to benefit from technical advances in accessibility.</p>
+
+<p>The making of the technical reference was based on a set of tests to verify their compatibility with browsers and assistive technologies. Given the diversity of existing systems, the tests focused on the most used configurations.</p>
+
+<p>Open and free-of-charge solutions have been taken into account, to carry out tests, in order to allow users wishing to update their configuration, to be able to do so at no extra cost.</p>
+
+<p>This baseline is explained in detail in a subsection of the technical reference. It concerns cases where it is not possible to know the configuration of the users' workstations (configuration of the software used and their version).</p>
+
+<p>When the installed computer base is known, it is called a "<a href="./glossary.html#mEnvMait">controlled environment</a>". The reference baseline for the tests is then made up of the software used in this controlled environment.</p>
+
+<p>Note that this reference baseline is a minimal technical basis on which tests must be carried out. But it is advised to complete this baseline, especially if the goal is to extend compatibility with older technologies.</p>
+
+<h4 tabindex="-1" id="4.2.5">4.2.5. Conformance claim
+</h4>
+<h5>4.2.5.1. Principle
+</h5>
+<p>The "Conformance claim" is the final step in verifying conformance with the RGAA; it is performed prior to making the online service available, and corresponds to a solemn commitment to meet all tests (except for duly justified derogation) with WCAG-deducted level A and AA, as per the RGAA version in force.</p>
+
+<p>It may therefore contain limited gaps in relation to the RGAA tests. In some cases, the site owner will be technically unable to implement some of the criteria. It will then be possible to signal the corresponding contents as inaccessible.</p>
+
+<p>In any event, the deviations must be justified and explained in accordance with the principle of derogation (see the "<a href="#4.2.6">List of permitted derogations and principle of compensation</a>" section).</p>
+
+<p>Resorting to this derogation principle does not prevent from aiming at full conformance with the RGAA tests, but allows site owners to:</p>
+<ul>
+<li>Demonstrate progress in their conformance efforts;</li>
+<li>Report future site improvements;</li>
+<li>Show users that issues are known and anticipated;</li>
+<li>Report implementation issues on the ground, back to the Ministry in charge of Persons With Disabilities;</li>
+<li>Facilitate the adjustment or implementation of training, awareness-raising or the provision of tools.</li>
+</ul>
+
+<h5>4.2.5.2. Content of the claim
+</h5>
+<p>The conformance claim shall cover at least the following list of pages of the site, when they exist:</p>
+<ul>
+<li>Home page (page constituting the main entry point of the online public communication service, it is generally accessible via a web address, similar to <code>http://www.siteurl.extension</code>);</li>
+<li>Contact page (page containing contact details, or forms used to directly contact the administrators of the online public communication service);</li>
+<li>Legal notice page;</li>
+<li>Accessibility policy page: In addition to information on the overall evolution of the site accessibility, this page will contain information on the conformance claim, including a list of pages or services that do not conform to accessibility requirements by derogation, their types, and alternative solutions to access them;</li>
+<li>Help page (page containing information facilitating the use of the site; shortcuts keyboards, if any; software or plug-ins needed to browse the site). The help page, mandatory, must specify the details of a <a href="#ftn28" id="body-ftn28">contact<sup aria-hidden="true">28</sup></a> within the administration, and the contact details of the Rights Defender;</li>
+<li>Sitemap (page summarizing the tree structure of the site, or helping to navigate within the different pages composing the online public communication service);</li>
+<li>Search page (page whose main object is to provide a search form or the results of a search);</li>
+<li>All pages composing the process of an online service (a form or a multi-page transaction).</li>
+</ul>
+<p>Added to these imperative pages, should be considered some pages in the following list:</p>
+<ul>
+<li>Pages that give access to the main contents or functionalities (ex: first level landing pages in the site structure&hellip;);</li>
+<li>Pages representative of the types of content available in the site (eg: page containing data tables, multimedia elements, graphic content, forms, etc.);</li>
+<li>Most visited pages.</li>
+</ul>
+<p>The exact composition of this subset of the sample, drawn from the complementary list above, requires the appreciation of a human observer. This appreciation depends on the content and services, and the ability to implement the RGAA in your technical environment, depending on your skills and resources.
+</p>
+<p>Note that in the typical case of application of Single Page Application (SPA), all required pages in the sample described above are not necessarily present. It will then be necessary to adjust the sample to make it representative.</p>
+
+<p>The RGAA provides no specific format for the conformance claim but specifies the minimum information to be included, based on the principle of <a href="#ftn29" id="body-ftn29">conformance claim<sup aria-hidden="true">29</sup></a> found in WCAG 2.0:</p>
+<ul>
+<li>Date of completion;
+</li>
+<li>Version of the RGAA used;</li>
+<li>Name and email address of the declarant;</li>
+<li>Technologies used on the site;</li>
+<li>List of user agents and assistive technologies used to check the accessibility of content;</li>
+<li>List of site pages that have been verified for conformance;</li>
+<li>Test results and justification for derogations.</li>
+</ul>
+<h5>4.2.5.3. Who checks conformance?</h5>
+
+<p>It is necessary to make a distinction between the verification carried out, on the initiative of the Web owner, by an independent expert and which can be carried out throughout implementation; and the verification carried out by the administration, on the basis, or not, of a conformance claim. The purpose of the latter is to monitor conformance with the RGAA.</p>
+<p>
+According to the decree &#8470; 2009-546 of May 14, 2009, the verification of conformance with the RGAA is carried out by the Ministry in charge of Persons With Disabilities. It is this principle of verification which is described here. It is also this principle that can be used to check the site during its production, or as part of a process to improve an existing site.
+</p>
+<h5>4.2.5.4. What is verified?
+</h5>
+<p>It is most often impossible to verify the entirety of the RGAA criteria on all pages of a site (whether it has just been redesigned or is being improved). This is why the site administrator will have to determine a sample of representative pages, some of which will be mandatory for the conformance claim (see section Content of the claim, above). The size of this sample may vary depending on the number of pages, proposed content, number of forms, transactional processes, etc.</p>
+
+<p>The site administrator will have an interest in choosing a sample of pages that is as representative as possible, while taking care not to cause an exaggerated amount of work for verification. As an indication, the standard sample generally comprises about fifteen pages.
+</p>
+<p>For a page to be declared conforming with the RGAA, it must verify the following:
+</p>
+<ul>
+    <li>Level double-A (AA) must be reached;</li>
+<li>Conformance (and level of conformance) refers only to complete web pages and can not be achieved if part of the web page is excluded;</li>
+<li>When a Web page is part of a set defining a process (such as a sequence of steps to complete an activity), all Web pages in the process conform to at least the specified level. (Conformance at a certain level is impossible if there is a page of this process that does not at least reach that level);</li>
+<li>If technologies are used in a manner that is not compatible with accessibility, or non-conforming, then they do not prevent users from accessing the rest of the page.</li>
+</ul>
+<h5>4.2.5.5. How is RGAA conformance verified?</h5>
+
+<p>The actions to be carried out by the person in charge of verifying conformance with the RGAA are:</p>
+<ul>
+<li>Identification of the pages composing the sample: given the disparity of contexts, this choice will most often result from local decisions, and therefore of the accessibility policy defined. The sample contains at least the set of mandatory pages;</li>
+<li>Performing tests on each page of the sample;</li>
+<li>Production of a report in the form of an informed audit grid and/or a report, more or less detailed, depending on the requirements.</li>
+</ul>
+<p>For audits, the RGAA 2.2 tests could have one of three statuses: conforming, non-conforming and not applicable.</p>
+
+<p>The technical reference of RGAA 3 proposes to extend these statuses, based on the <a href="#ftn30" id="body-ftn30">EARL (Evaluation And Report Language) schema from the W3C<sup aria-hidden="true">30</sup></a> to improve the measurement system.</p>
+
+<p>For technical repository of RGAA 3, a criterion can now have one of the 4 following statuses:</p>
+
+            <ul>
+                <li>Conforming, or valid: the criterion is conforming;</li>
+                <li>Non Conforming, or invalid: the criterion is non conforming;</li>
+                <li>Not Applicable (NA): the criterion is not applicable;</li>
+                <li>Not tested (NT): the criterion has not been tested (new status allowing measurement of progress during an audit).</li>
+            </ul>
+
+<p>In addition to these four statuses is created a particular status, treated separately, for derogated content. This will result in an additional column in the audit grid, to indicate when a derogated content is present and impacts some of the criteria. A given criterion can therefore have a derogated status when it concerns a derogated content, but it remains applicable to the rest of the contents of the page.
+</p>
+<p>This particular status will complement the first four statuses, and will point out that some criteria  are applicable to derogated contents, and to keep track of these derogations.
+</p>
+<p>The terms of access and use of the conformance claim will be defined by the services of the Minister in charge of Persons With Disabilities.
+</p>
+<h5>4.2.5.6. Online publication of the claim
+</h5>
+<p>The claim will be available on the online public communication service,  via a dedicated page or within another page (help, or accessibility policy, or legal notice pages, for instance). This page should be accessible from any other page of the online public communication service.</p>
+
+<h5>4.2.5.7. Validity of the claim
+</h5>
+<p>The conformance claim is considered valid for the version of the RGAA in force at the date of its publication. Once a new version of RGAA is published, the claim related to an earlier version is no longer valid. The site owners will then have 18 months to conform with the latest public version.</p>
+
+<p>Note that a conformance claim can be updated several times for the same site and the same version of RGAA, to highlight the accessibility development efforts and to update the level reached.
+</p>
+<h4 tabindex="-1" id="4.2.6">4.2.6. List of permitted derogations and principle of compensation
+</h4>
+<p>Note that a derogation applies only to content, and not to a criterion of RGAA. Once a piece of content is subject to derogation, it is set out of the audit perimeter.</p>
+
+<p>When it comes to content or functionality that are essential parts of the website or web application, there can be no derogation without a sophisticated alternative to provide the same level of information or functionality to the user.
+
+</p>
+<h5>4.2.6.1. Cases described in WCAG 2.0
+</h5>
+<p>WCAG provide a number of cases to waive the full accessibility of a web page by making a <a href="#ftn31" id="body-ftn31">Statement of Partial Conformance<sup aria-hidden="true">31</sup></a>.
+</p>
+<h6>4.2.6.1.1. Content supplied by third party
+</h6>
+<p><strong>User generated content</strong>: Sometimes it is not possible, when pages are created, to know what will be the uncontrolled content of these pages. This is particularly true of the user-generated content, such as in a Web-based e-mail application, a blog, an article  that allows users to add comments, or applications supporting user-contributed content, like wikis.
+</p>
+<p><strong>Uncontrolled content from external sources</strong>: another example provided by WCAG relates to pages, such as a portal or news site, composed of content aggregated from multiple contributors, or sites that automatically insert content from other sources over time, such as when advertisements are inserted dynamically.</p>
+
+<p>This case of derogation also applies to links to downloadable documents published on other sites, the content of which is not controllable (see Cases of links to downloadable documents published on other sites).</p>
+
+<p>Content provided by third parties may be waived. A precise statement must identify them. The statement may be as follows:</p>
+<blockquote>
+<p>This page does not conform, but would conform to RGAA level X if the following parts from uncontrolled sources were removed: [list of concerned parts]. </p>
+</blockquote>
+<h6>4.2.6.1.2. Language
+</h6>
+<p>A case of derogation is also provided in the WCAG 2.0 when a page does not conform, but would conform if accessibility support existed for (all of) the language(s) used on the page. The form of that statement would be:</p>
+<blockquote>
+<p>This page does not conform, but would conform to WCAG 2.0 at level X if accessibility support existed for the following language(s): [list of concerned languages].
+</p></blockquote>
+
+<h5>4.2.6.2. Additional derogations
+</h5>
+<h6>4.2.6.2.1. Archiving and content obsolescence
+</h6>
+<p>Contents concerned by a mission of heritage preservation of the Internet, by public bodies designated by law, may be waived.
+</p>
+<p>Example: a service offering content archives. See in particular, regarding archives, articles 221-1 and following of the Heritage Code, concerning the legal deposit, Article L132-2-1 of the Heritage Code, added by Article IV of Act &#8470; 2006 - 961 of August 1, 2006, on copyright and related rights in the information society, which puts the National Library of France (BNF) and the National Audiovisual Institute (INA) in charge of performing the legal deposit of works in digital form.
+</p>
+<h6>4.2.6.2.2. Downloadable content in large numbers
+</h6>
+<p>It can be extremely expensive and therefore unreasonable to bring into conformance a significant number of downloadable archives, beyond the contents listed in the previous section.</p>
+
+<p>In this case, a derogation can be claimed for documents older than 2 years. This does not apply to the production of new documents.</p>
+
+<h5>4.2.6.3. Measures to be taken when content is derogated
+</h5>
+<ul>
+    <li>Non-accessible content must be reported to the user on the help page and the conformance claim, to inform of the proportion of the pages concerned, and their location in the sections of the site;</li>
+<li>Accessibility derogations must be explained and justified in the context of the conformance claim;</li>
+<li>It is necessary to provide a channel for users with disabilities, or  who detect an accessibility issue, so they can report to the administrators of the online service, via an accessible mechanism (email address or form), available from any page of the site.</li>
+</ul>
+<p>Traceability of such derogated content will also appear in the audit grids as described in "How is RGAA conformance verified?".
+</p>
+<h5>4.2.6.4. Right to compensation
+</h5>
+<p>It is important to recall that under Article 11 of the February 2005 law:
+</p>
+<blockquote>
+<p>A person with disabilities is entitled to compensation for the consequences of their disability, whatever the origin and nature of their disability, age or lifestyle.</p>
+</blockquote>
+<p>Thus, every organization has an obligation to take the necessary actions to provide access, within a reasonable time, to information and functionalities required by the person with disabilities, whether the content is the subject of derogation or not. The ability to request an accessible alternative content must be offered to the user on the help page, via an accessible means of contact (email or contact form).</p>
+
+<h2 tabindex="-1" id="5">5. Versioning</h2>
+
+<p>The RGAA is a reference document composed of different elements, each originally having its own version number. This double numbering has been dropped, as per the version 3 of the RGAA.</p>
+
+<p>To facilitate traceability, and for now on, each update of any of its constituting documents will lead to a versioning of the RGAA as a whole, and archives of the different versions will be available for download.</p>
+
+<table>
+<caption>Versions</caption>
+<tr><th scope="col" style="width:15%;">Version</th> <th scope="col" style="width:15%;">Date</th>   <th scope="col">Description</th></tr>
+<tr><td>0.99</td>   <td>2008/04/25</td> <td>Version revised and corrected following the public call for comments. Validated by the accessibility experts panel on September 18, 2007 and published on the Web.</td></tr>
+<tr><td>1.0</td>    <td>2008/11/24</td><td> Harmonized version in terms of presentation with other reference documents, numbered and dated. Addition of an introduction and a detailed presentation of the Web channel.</td></tr>
+<tr><td>Pre-2.0</td>    <td>2009/04/17</td> <td>Initialization of a new document that cancels and replaces version 1.0 of the RGAA. Restricted diffusion.</td></tr>
+<tr><td>2.0</td><td>    2009/06/03  </td><td>Redesign of the RGAA structure. Integration of the chapter on Success Criteria and the chapter on the WCAG 2.0 translation.</td></tr>
+<tr><td>2.1</td><td>    2009/07/03  </td><td>Visual redesign of the RGAA 2.0.</td></tr>
+<tr><td>2.2</td><td>    2009/09/30</td><td>Update of the following parts:
+<ul><li>General presentation</li>
+<li>Document organization</li>
+</ul>
+Update of the deducted WCAG levels based on WCAG 2.0. Consistency check with the companion document.
+</td></tr>
+<tr><td>2.2.1   </td><td>2009/11/16 </td><td>Correction of the category list in the paragraph "4. Unit tests" (correct list in the annex).</td></tr>
+<tr><td>3.0</td><td>    2015/04/29  </td><td>Major update. See the companion guide for details on the changes.</td></tr>
+<tr><td>3 2016</td><td> 2016/06/23  </td><td>Updated content and presentation.</td></tr>
+</table>
+
+
+
+</main>
+<aside aria-label="Footnotes" class="footnotes">
+ <ol>
+    <li tabindex="-1" id="ftn1">Source&nbsp;: <a href="http://apps.who.int/iris/bitstream/10665/41003/1/9241541261_eng.pdf">International Classification of Impairments, Disabilities and Handicaps (WHO, 1980)&nbsp;- PDF&nbsp;; 6,4 Mb&nbsp;</a> (<a href="#body-ftn1">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn2">Source&nbsp;: <a href="http://www.who.int/classifications/icf/en/">International Classification of Functioning, Disability and Health (ICF)</a> (<a href="#body-ftn2">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn3">Law 2005-102 of February 11, 2005, which led to a definition given in <a hreflang="fr" href="https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=35AC6B7A768A9D93A581BF2882D80F9F.tpdjo08v_3?cidTexte=LEGITEXT000006074069&amp;idArticle=LEGIARTI000006796446&amp;dateTexte=">Article L. 114 of the Code of Social Action and Families</a> (<a href="#body-ftn3">back to text</a>).</li>
+    <li tabindex="-1" id="ftn4"><a hreflang="fr" href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000809647&amp;fastPos=1&amp;fastReqId=732447887&amp;categorieLien=cid&amp;oldAction=rechTexte#LEGIARTI000006682279">Article 47</a> Law 2005-102 of February 11, 2005,  on <span lang="fr">Légifrance</span> website (<a href="#body-ftn4">back to text</a>).</li>
+    <li tabindex="-1" id="ftn5"><a href="https://www.w3.org/TR/WCAG20/">WCAG&nbsp;2.0</a> (<a href="#body-ftn5">back to text</a>).</li>
+   <li tabindex="-1" id="ftn6">This is the ISO/IEC 40500:2012 standard. See the <a href="http://www.iso.org/iso/home/news_index/news_archive/news.htm?refid=Ref1670">online news on the ISO website</a> (<a href="#body-ftn6">back to text</a>).</li>
+    <li tabindex="-1" id="ftn7">Since the "eEurope 2002 plan" confirmed by the "eEurope 2005 plan", the European Commission has integrated the accessibility of the people with disabilities and the elderly to the information society as a priority of its action. Point 31 of the  <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//TEXT+TA+P5-TA-2002-0325+0+DOC+XML+V0//EN">European Parliament resolution of June 13, 2002</a> states: "for websites to be accessible, it is essential that they are double-A compliant, that priority 2 of the WAI guidelines must be fully implemented" (<a href="#body-ftn7">back to text</a>).</li> 
+    <li tabindex="-1" id="ftn8">Models of these documents will be available in a "Resources" section. This section, non normative, will provide various types of administrative, technical and educational support for public employers in their efforts (<a href="#body-ftn8">back to text</a>).</li>
+
+        <li tabindex="-1" id="ftn9">Decree &#8470; 2009-546 of May 14, 2009 made pursuant to Article 47 of Law &#8470; 2005-102 of February 11, 2005, for the equality of rights and opportunities, participation and citizenship of persons with disabilities, introducing an accessibility reference framework for online public communication services. NOR: BCFJ0902916D (<a href="#body-ftn9">back to text</a>).</li>
+    <li tabindex="-1" id="ftn10">The INSEE's 2007 Survey of Daily Life and Health reports that one in ten says they have a disability, but one person in five is limited in their activities. The <a hreflang="fr" href="https://www.insee.fr/fr/statistiques/1281147">results</a> are available online (<a href="#body-ftn10">back to text</a>).</li>
+    <li tabindex="-1" id="ftn11">Source: <a href="http://www.who.int/disabilities/world_report/2011/report/en/">World Report on Disability, WHO</a> (<a href="#body-ftn11">back to text</a>).</li>
+    <li tabindex="-1" id="ftn12">Note&nbsp;: To learn more about the "Easy to Read And Understand" method (contracted as FALC, in French), you may read <a hreflang="fr" href="http://www.unapei.org/IMG/pdf/Guide_ReglesFacileAlire.pdf"><span lang="fr">Guide du langage Facile à Lire et à Comprendre (PDF, 818 kb, in French)</span></a> on UNAPEI's website (<a href="#body-ftn12">back to text</a>).</li>
+    <li tabindex="-1" id="ftn13">See the <a href="http://www.un.org/disabilities/convention/conventionfull.shtml">CRPD on the UN website</a> (<a href="#body-ftn13">back to text</a>).</li>
+
+    <li tabindex="-1" id="ftn14">France signed the CRPD on March 30, 2007, its Protocol on September 23, 2008, and ratified the Convention and the Protocol on February 18, 2008 (<a href="https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&amp;mtdsg_no=IV-15&amp;chapter=4&amp;clang=_en">source: UN</a>) (<a href="#body-ftn14">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn15">The exact expression is: <q>Discrimination on the basis of disability (&hellip;) includes all forms of discrimination, including denial of reasonable accommodation</q> (<a href="#body-ftn15">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn16">Source&nbsp;: <a  href="https://ec.europa.eu/digital-single-market/pillar-vi-enhancing-digital-literacy-skills-and-inclusion/action-64-ensure-accessibility-public">Action 64</a> (<a href="#body-ftn16">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn17">Source&nbsp;: page on <a href="https://ec.europa.eu/digital-single-market/web-accessibility">Web accessibility on the European Commission's website</a> (<a href="#body-ftn17">back to text</a>).</li>
+    <li tabindex="-1" id="ftn18">Reference&nbsp;: NOR&nbsp;: BCFJ0917114A (<a href="#body-ftn18">back to text</a>).</li>
+    <li tabindex="-1" id="ftn19">Source&nbsp;: "<a href="https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Open_Licence.pdf"><span lang="fr">Licence ouverte</span>&nbsp;/ Open Licence (PDF, 529 kb)</a>" (<a href="#body-ftn19">back to text</a>).</li>
+    <li tabindex="-1" id="ftn20">Source&nbsp;: WCAG&nbsp;2.0, <a href="https://www.w3.org/TR/WCAG20/#intro-layers-guidance">section "WCAG 2.0 Layers of Guidance"</a> (<a href="#body-ftn20">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn21">Source&nbsp;: WCAG&nbsp;2.0, <a href="https://www.w3.org/TR/WCAG20/#conformance-reqs">section "Conformance requirements"</a> (<a href="#body-ftn21">back to text</a>).</li>  
+   <li tabindex="-1" id="ftn22">Point 31 of the  <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//TEXT+TA+P5-TA-2002-0325+0+DOC+XML+V0//EN">European Parliament resolution of June 13, 2002</a> states: "for websites to be accessible, it is essential that they are double-A compliant, that priority 2 of the WAI guidelines must be fully implemented" (<a href="#body-ftn22">back to text</a>).</li> 
+    <li tabindex="-1" id="ftn23"><a href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=46486">ISO 9001:2008 – Quality management systems</a> (<a href="#body-ftn23">back to text</a>).</li>
+    <li tabindex="-1" id="ftn24">This figure is generally accepted in the professional sphere of digital accessibility, although no formal study has been ever conducted (<a href="#body-ftn24">back to text</a>).</li>
+    <li tabindex="-1" id="ftn25">The raise of HTML5 and the massive use of JavaScript, in particular, have revolutionized the Web, making it converge increasingly towards an applicative framework (<a href="#body-ftn25">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn26">Requiring tests on a text-only browser that does not support JavaScript is unreasonable in the context of modern Web applications (<a href="#body-ftn26">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn27">In reference to the Convention on the Rights of Persons with Disabilities. To learn more, read <a href="#4.2.3">section 4.2.3. Requirement for reasonable accommodation</a> (<a href="#body-ftn27">back to text</a>).</li>
+    <li tabindex="-1" id="ftn28">This may be an anonymous e-mail address or a dedicated and accessible contact form. The accessibility lead should be informed of requests sent (<a href="#body-ftn28">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn29">Source&nbsp;: WCAG&nbsp;2.0, <a href="https://www.w3.org/TR/WCAG20/#conformance-claims">"Conformance Claims (Optional)" section</a> (<a href="#body-ftn29">back to text</a>).</li>  
+    <li tabindex="-1" id="ftn30"><a hreflang="en" href="http://www.w3.org/TR/EARL10-Schema/">Evaluation and Report Language (EARL) 1.0 Schema</a> (<a href="#body-ftn30">back to text</a>).</li>
+    <li tabindex="-1" id="ftn31">Source&nbsp;: WCAG&nbsp;2.0, <a href="https://www.w3.org/TR/WCAG20/#conformance-partial">Statement of Partial Conformance - Third Party Content</a> section (<a href="#body-ftn31">back to text</a>).</li>  
+  </ol>
+</aside>
+<footer role="contentinfo">
+    <h2>Licence</h2>
+            <p>
+                This document is a property of the State of France, under <a hreflang="fr" href="http://www.etalab.gouv.fr/licence-ouverte-open-licence">Open Licence 1.0 (in French)</a> or later, as all documents hosted on <a hreflang="fr" href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr (in French)</a>. See the terms and conditions of the licence in the <a hreflang="fr" href="http://references.modernisation.gouv.fr/mentions-legales">legal information</a>.
+            </p>
+
+ <h2>Disclaimer</h2>
+            <p>
+                This translation is NOT normative. It is available for informational purposes only. The normative version is the <a hreflang="fr" href="http://references.modernisation.gouv.fr/rgaa/">official RGAA in French</a>.
+            </p>
+            <p>
+                Although greatest care has been taken during translation, we acknowledge the fact that this text probably contains mistakes. You may write to <a href="mailto:rgaa.sgmap@modernisation.gouv.fr">rgaa.sgmap@modernisation.gouv.fr</a> if you feel corrections are needed.
+            </p>
+
+</footer>
+    </body>
+</html>

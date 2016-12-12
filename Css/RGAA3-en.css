@@ -1,6 +1,7 @@
 body {
     padding: 0 0.5em;
 }
+
 main {
     margin: 2em 0;
 }
@@ -9,10 +10,27 @@ h3 {
 }
 
 h4 {
+    font-size: 1.8rem;
+}
+h5 {
     font-size: 1.5rem;
+}
+h6 {
+    font-size: 1.3rem;
 }
 code {
     color: #8C0D0D;
+}
+caption {
+    color:#222;
+    font-weight:bold;
+}
+footer {
+    margin-bottom: 2em;
+}
+#skiplinks {
+    text-align:center;
+    margin-bottom:1em;
 }
 /* -------------------------------------------------------------------------- */
 /* Themes */
@@ -75,4 +93,13 @@ code {
 
 .test-list>li {
     margin: 0 0 0.7em;
+}
+/* -------------------------------------------------------------------------- */
+/* Footnotes */
+/* -------------------------------------------------------------------------- */
+aside.footnotes {
+    margin: 2em 0;
+}
+.footnotes li:target {
+    background-color: rgb(234, 236, 105);
 }
